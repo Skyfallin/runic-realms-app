@@ -10,6 +10,31 @@
   height: 125vh;
 }
 
+/* Customizing the scrollbar track (the part the thumb moves along) */
+::-webkit-scrollbar-track {
+  background: #181818;
+}
+
+/* Customizing the scrollbar thumb (the part that's draggable) */
+::-webkit-scrollbar-thumb {
+  background: #e6c4f5;
+}
+
+/* Handle hover and active states for the thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #333;
+}
+
+/* Customizing the width or height of the scrollbar */
+::-webkit-scrollbar {
+  width: 10px; /* for vertical scrollbars */
+  height: 10px; /* for horizontal scrollbars */
+}
+
 /* @media (max-width: 768px) {
   .background {
     background-image: url("/path/to/your-smaller-image.jpg");
