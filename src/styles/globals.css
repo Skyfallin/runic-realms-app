@@ -10,6 +10,10 @@
   height: 125vh;
 }
 
+.portal-grid {
+  grid-template-rows: 3fr 2fr;
+}
+
 /* Customizing the scrollbar track (the part the thumb moves along) */
 ::-webkit-scrollbar-track {
   background: #181818;
