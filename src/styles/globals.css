@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.background {
+  background-image: url("/background-full.png");
+  background-size: cover; /* or contain based on your need */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* @media (max-width: 768px) {
+  .background {
+    background-image: url("/path/to/your-smaller-image.jpg");
+  }
+}
+
+@media (max-width: 480px) {
+  .background {
+    background-image: url("/path/to/your-smallest-image.jpg");
+  }
+} */
