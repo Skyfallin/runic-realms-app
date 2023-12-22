@@ -1,8 +1,11 @@
 import { Button } from "@chakra-ui/react"
 import Head from "next/head"
-import RunicNavigation from "~/components/runic-navigation"
+import React from "react"
+import { RunicNavigation } from "~/components/runic-navigation"
 
-export default function Home() {
+const Home = () => {
+  const [activeIndex, setActiveIndex] = React.useState(0) // Default to first button
+
   return (
     <>
       <Head>
@@ -11,12 +14,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="background portal-grid grid min-h-screen">
-        <div className="row-span-1 bg-blue-500 opacity-35"></div>
-        <RunicNavigation />
-        <div className="row-span-1 bg-red-500 opacity-35">
-          <Button>Test</Button>
-        </div>
+        <div className="row-span-1"></div>
+        <RunicNavigation
+          activeIndex={activeIndex}
+          setActiveIndex={setActiveIndex}
+        />
+
+        <div className="row-span-1"></div>
       </main>
     </>
   )
 }
+
+export default Home
