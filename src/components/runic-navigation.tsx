@@ -30,13 +30,12 @@ const RunicNavigation: React.FC<Readonly<RunicNavigationProps>> = ({
         <ButtonGroup spacing="8">
           {buttons.map((payload, index) => (
             <Button
-              bg={index === activeIndex ? "#1f7a8c" : ""}
+              className={index === activeIndex ? "button" : ""}
               color="white"
               borderRadius={"full"}
               key={payload.label}
               onClick={() => setActiveIndex(index)}
               width={[48, 96, 144]}
-              variant="solid"
             >
               <Box display="flex" alignItems="center" gap="2">
                 {payload.icon}

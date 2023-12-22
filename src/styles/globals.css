@@ -10,6 +10,10 @@
   height: 125vh;
 }
 
+.button {
+  background-color: #1f7a8c;
+}
+
 .portal-grid {
   grid-template-rows: 3fr 2fr;
 }
