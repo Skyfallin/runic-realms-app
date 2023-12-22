@@ -31,7 +31,8 @@ const config = {
         checksVoidReturn: { attributes: false },
       },
     ],
+    semi: ["error", "never"],
   },
-};
+}
 
-module.exports = config;
+module.exports = config
