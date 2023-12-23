@@ -23,6 +23,12 @@
 .bottom-container {
 }
 
+.box-shadow {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
 .gradient-button {
   background: linear-gradient(to right, #1f7a8c, #84dd63);
   /* TODO: add colors to tailwind config */

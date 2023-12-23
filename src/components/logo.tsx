@@ -5,20 +5,22 @@ import React from "react"
 const MyComponent = () => {
   return (
     <>
-      <Box className="absolute right-0 top-1/2 -translate-y-1/2 transform">
+      <Box className="absolute right-0 top-1/2 -translate-y-1/2 transform ">
         <Image
           src="/text-logo.png"
           alt="Description"
           width={700}
           height={350}
           objectFit="cover"
+          className="drop-shadow-md"
         />
         <Box className="absolute right-1/2 top-[calc(50%+75px)] translate-x-1/2 transform">
           <Button
-            className="gradient-button"
+            className="gradient-button box-shadow"
             color="white"
             w={[50, 100, 150]}
-            borderRadius="full"
+            // borderRadius="full"
+            borderRadius={"none"}
           >
             PLAY NOW
           </Button>
