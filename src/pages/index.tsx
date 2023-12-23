@@ -19,7 +19,20 @@ const Home = () => {
           {/* bg-green-500 opacity-50 */}
           <Logo />
         </Box>
-        <Box className="col-span-2 row-span-1 "></Box>
+        <Box
+          display="flex"
+          className="col-span-2 row-span-1"
+          flexDirection={"column"}
+        >
+          {/* <Box
+            background={"blue"}
+            // flex="1"
+            height="20px"
+            justifyContent={"flex-end"}
+            justifySelf={"flex-end"}
+            alignContent={"flex-end"}
+          ></Box> */}
+        </Box>
         <RunicNavigation
           activeIndex={activeIndex}
           setActiveIndex={setActiveIndex}
