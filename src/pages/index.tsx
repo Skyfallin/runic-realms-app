@@ -15,13 +15,13 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="background portal-grid grid min-h-screen grid-cols-2">
-        <Box className="relative col-span-1 row-span-1  ">
+        <Box className="top-left-container">
           {/* bg-green-500 opacity-50 */}
           <Logo />
         </Box>
         <Box
           display="flex"
-          className="col-span-2 row-span-1"
+          className="bottom-container"
           flexDirection={"column"}
         >
           {/* <Box

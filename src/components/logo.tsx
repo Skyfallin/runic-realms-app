@@ -12,11 +12,11 @@ const MyComponent = () => {
           width={700}
           height={350}
           objectFit="cover"
-          className="drop-shadow-md"
+          //   className="drop-shadow-md"
         />
         <Box className="absolute right-1/2 top-[calc(50%+75px)] translate-x-1/2 transform">
           <Button
-            className="gradient-button box-shadow"
+            className="green-gradient box-shadow"
             color="white"
             w={[50, 100, 150]}
             // borderRadius="full"

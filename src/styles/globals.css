@@ -15,12 +15,16 @@
 }
 
 .top-left-container {
+  position: relative;
+  grid-column: span 1;
 }
 
 .top-right-container {
 }
 
 .bottom-container {
+  grid-row: 2;
+  grid-column: span 2;
 }
 
 .box-shadow {
@@ -29,9 +33,12 @@
   -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-.gradient-button {
+.green-gradient {
   background: linear-gradient(to right, #1f7a8c, #84dd63);
   /* TODO: add colors to tailwind config */
+}
+
+.gold-gradient {
 }
 
 .portal-grid {
