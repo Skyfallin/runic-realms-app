@@ -38,7 +38,42 @@
   /* TODO: add colors to tailwind config */
 }
 
-.gold-gradient {
+.shiny-gold-button {
+  background: linear-gradient(45deg, #d4af37, #f9d71c, #d4af37);
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s;
+  z-index: 1; /* Ensure the button is above the pseudo-element */
+}
+
+.shiny-gold-button::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -45%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent 49%,
+    white 50%,
+    transparent 51%
+  );
+  transition: transform 0.3s;
+  z-index: -1; /* Place the pseudo-element underneath the button text */
+}
+
+.shiny-gold-button:hover {
+  transform: scale(1.05);
+}
+
+.shiny-gold-button:hover::before {
+  transform: rotate(30deg);
 }
 
 .portal-grid {

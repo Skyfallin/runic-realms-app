@@ -18,13 +18,22 @@ const RunicNavigation: React.FC<Readonly<RunicNavigationProps>> = ({
     { label: "Forums", icon: <Forum /> },
   ]
 
+  const determineClassName = (label: string, index: number): string => {
+    if (label === "Store") {
+      return "shiny-gold-button"
+    } else if (index === activeIndex) {
+      return ""
+    }
+    return ""
+  }
+
   return (
     <div className="fixed right-8 top-0 p-4">
       <div className="flex space-x-8">
         <ButtonGroup spacing="8" className="drop-shadow-2xl">
           {buttons.map((payload, index) => (
             <Button
-              className={index === activeIndex ? "button" : ""}
+              className={determineClassName(payload.label, index)}
               color="white"
               borderRadius={"full"}
               key={payload.label}
