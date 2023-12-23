@@ -1,11 +1,5 @@
 import { Box, Button, ButtonGroup } from "@chakra-ui/react"
-import {
-  Campaign,
-  Home,
-  Map,
-  Newspaper,
-  ShoppingCart,
-} from "@mui/icons-material"
+import { Campaign, Forum, Home, Map, ShoppingCart } from "@mui/icons-material"
 
 type RunicNavigationProps = {
   activeIndex: number
@@ -21,13 +15,13 @@ const RunicNavigation: React.FC<Readonly<RunicNavigationProps>> = ({
     { label: "News", icon: <Campaign /> },
     { label: "Store", icon: <ShoppingCart /> },
     { label: "Map", icon: <Map /> },
-    { label: "Forums", icon: <Newspaper /> },
+    { label: "Forums", icon: <Forum /> },
   ]
 
   return (
     <div className="fixed right-8 top-0 p-4">
       <div className="flex space-x-8">
-        <ButtonGroup spacing="8">
+        <ButtonGroup spacing="8" className="drop-shadow-2xl">
           {buttons.map((payload, index) => (
             <Button
               className={index === activeIndex ? "button" : ""}
