@@ -18,7 +18,7 @@ const Logo = () => {
             className="green-gradient box-shadow"
             color="white"
             w={[50, 100, 150]}
-            borderRadius={"none"}
+            borderRadius={"sm"}
           >
             PLAY NOW
           </Button>
