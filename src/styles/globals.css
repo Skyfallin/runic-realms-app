@@ -14,6 +14,20 @@
   background-color: #1f7a8c;
 }
 
+.top-left-container {
+}
+
+.top-right-container {
+}
+
+.bottom-container {
+}
+
+.gradient-button {
+  background: linear-gradient(to right, #1f7a8c, #84dd63);
+  /* TODO: add colors to tailwind config */
+}
+
 .portal-grid {
   grid-template-rows: 3fr 2fr;
 }
