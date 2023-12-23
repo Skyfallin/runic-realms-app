@@ -2,7 +2,7 @@ import { Box } from "@chakra-ui/react"
 import Head from "next/head"
 import React from "react"
 import Logo from "~/components/logo"
-import { RunicNavigation } from "~/components/runic-navigation"
+import { Navigation } from "~/components/navigation"
 
 const Home = () => {
   const [activeIndex, setActiveIndex] = React.useState(0)
@@ -33,10 +33,7 @@ const Home = () => {
             alignContent={"flex-end"}
           ></Box> */}
         </Box>
-        <RunicNavigation
-          activeIndex={activeIndex}
-          setActiveIndex={setActiveIndex}
-        />
+        <Navigation activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
       </main>
     </>
   )

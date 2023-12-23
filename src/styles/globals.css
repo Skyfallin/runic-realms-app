@@ -34,17 +34,16 @@
 }
 
 .green-gradient {
-  background: linear-gradient(to right, #1f7a8c, #84dd63);
+  background: linear-gradient(to right, #1f7a8c, #84dd63) !important;
   /* TODO: add colors to tailwind config */
 }
 
 .shiny-gold-button {
-  background: linear-gradient(45deg, #d4af37, #f9d71c, #d4af37);
+  background: linear-gradient(45deg, #d4af37, #f9d71c, #d4af37) !important;
   color: black;
   border: none;
   padding: 10px 20px;
   font-weight: bold;
-  border-radius: 5px;
   position: relative;
   overflow: hidden;
   transition: transform 0.3s;

@@ -2,7 +2,7 @@ import { Box, Button } from "@chakra-ui/react"
 import Image from "next/image"
 import React from "react"
 
-const MyComponent = () => {
+const Logo = () => {
   return (
     <>
       <Box className="absolute right-0 top-1/2 -translate-y-1/2 transform ">
@@ -12,14 +12,12 @@ const MyComponent = () => {
           width={700}
           height={350}
           objectFit="cover"
-          //   className="drop-shadow-md"
         />
         <Box className="absolute right-1/2 top-[calc(50%+75px)] translate-x-1/2 transform">
           <Button
             className="green-gradient box-shadow"
             color="white"
             w={[50, 100, 150]}
-            // borderRadius="full"
             borderRadius={"none"}
           >
             PLAY NOW
@@ -30,4 +28,4 @@ const MyComponent = () => {
   )
 }
 
-export default MyComponent
+export default Logo

@@ -1,21 +1,22 @@
 import { Box, Button, ButtonGroup } from "@chakra-ui/react"
-import { Campaign, Forum, Home, Map, ShoppingCart } from "@mui/icons-material"
+import { FaBullhorn, FaCoins, FaHome, FaMap } from "react-icons/fa"
+import { MdForum } from "react-icons/md"
 
 type RunicNavigationProps = {
   activeIndex: number
   setActiveIndex: (index: number) => void
 }
 
-const RunicNavigation: React.FC<Readonly<RunicNavigationProps>> = ({
+const Navigation: React.FC<Readonly<RunicNavigationProps>> = ({
   activeIndex,
   setActiveIndex,
 }) => {
   const buttons = [
-    { label: "Home", icon: <Home /> },
-    { label: "News", icon: <Campaign /> },
-    { label: "Store", icon: <ShoppingCart /> },
-    { label: "Map", icon: <Map /> },
-    { label: "Forums", icon: <Forum /> },
+    { label: "Home", icon: <FaHome />, type: "internal" },
+    { label: "News", icon: <FaBullhorn />, type: "external" },
+    { label: "Store", icon: <FaCoins />, type: "external" },
+    { label: "Map", icon: <FaMap />, type: "internal" },
+    { label: "Forums", icon: <MdForum />, type: "external" },
   ]
 
   const determineClassName = (label: string, index: number): string => {
@@ -39,6 +40,7 @@ const RunicNavigation: React.FC<Readonly<RunicNavigationProps>> = ({
               key={payload.label}
               onClick={() => setActiveIndex(index)}
               width={[48, 96, 144]}
+              variant={"ghost"}
             >
               <Box display="flex" alignItems="center" gap="2">
                 {payload.icon}
@@ -52,4 +54,4 @@ const RunicNavigation: React.FC<Readonly<RunicNavigationProps>> = ({
   )
 }
 
-export { RunicNavigation }
+export { Navigation }
