@@ -1,7 +1,6 @@
 import { Box } from "@chakra-ui/react"
 import Head from "next/head"
 import React from "react"
-import { ImageCarousel } from "~/components/carousel"
 import Logo from "~/components/logo"
 import { Navigation } from "~/components/navigation"
 
@@ -19,22 +18,12 @@ const Home = () => {
         <Box className="top-left-container">
           {/* bg-green-500 opacity-50 */}
           <Logo />
-          {/* <ImageCarousel /> */}
         </Box>
         <Box
           display="flex"
           className="bottom-container"
           flexDirection={"column"}
-        >
-          {/* <Box
-            background={"blue"}
-            // flex="1"
-            height="20px"
-            justifyContent={"flex-end"}
-            justifySelf={"flex-end"}
-            alignContent={"flex-end"}
-          ></Box> */}
-        </Box>
+        ></Box>
         <Navigation activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
       </main>
     </>

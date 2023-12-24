@@ -14,6 +14,7 @@ const Logo = () => {
         justifyContent="center"
         h="100%"
         gap="4"
+        mt="6rem"
       >
         <Image
           src="/text-logo.png"
@@ -31,7 +32,7 @@ const Logo = () => {
         >
           PLAY NOW
         </Button>
-        <ImageCarousel />
+        <ImageCarousel mt="8" />
       </Box>
     </>
   )

@@ -3,10 +3,6 @@ import Image from "next/image"
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa"
 import { Box, Button } from "@chakra-ui/react"
 
-type ImageCarouselProps = {
-  images: Array<React.ImgHTMLAttributes<HTMLImageElement>>
-}
-
 const images = [
   "/azana-pixel-perfection.png",
   //   <Image
@@ -18,7 +14,7 @@ const images = [
   //   />,
 ]
 
-const ImageCarousel = () => {
+const ImageCarousel = ({ ...boxProps }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   const goToPrevious = () => {
@@ -34,19 +30,19 @@ const ImageCarousel = () => {
   }
 
   return (
-    <Box className="relative flex items-center justify-center">
+    <Box className="relative flex items-center justify-center" {...boxProps}>
       <Button onClick={goToPrevious} className="absolute left-0">
         <FaArrowLeft />
       </Button>
 
       <Image
-        src={images[currentImageIndex]}
-        // src="/azana-pixel-perfection.png"
+        // src={images[currentImageIndex]}
+        src="/azana-pixel-perfection.png"
         alt="Carousel Image"
-        width={250}
-        height={141}
+        width={300}
+        height={169}
         objectFit="cover"
-        // borderRadius="md"
+        className="rounded"
       />
 
       <Button onClick={goToNext} className="absolute right-0">
