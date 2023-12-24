@@ -16,7 +16,7 @@ export const images = [
 
 const ImageCarousel = () => {
   return (
-    <Box position="absolute" bottom="0" bg="blue.500">
+    <Box position="absolute" bottom="0" width={"100%"}>
       <Swiper
         navigation
         centeredSlides
@@ -26,7 +26,7 @@ const ImageCarousel = () => {
         effect="coverflow"
         modules={[Navigation, Pagination]}
         onSwiper={(swiper) => console.log(swiper)}
-        className="h-96 w-full rounded-lg"
+        className="rounded-lg"
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
