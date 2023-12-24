@@ -22,7 +22,8 @@ const Home = () => {
         <Box position="relative" className=" bg-blue-500 opacity-50">
           <ImageCarousel />
         </Box>
-        <Box className="footer">Test</Box>
+        <Box className="footer-left">Test</Box>
+        <Box className="footer-right">Test</Box>
         <Navigation activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
       </main>
     </>
