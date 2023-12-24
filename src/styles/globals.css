@@ -34,7 +34,7 @@
 }
 
 .logo-content-container {
-  position: absolute;
+  /* background: red; */
   /* grid-row: span 2; */
   /* grid-column: span 2; */
 }
@@ -110,7 +110,7 @@
 }
 
 .portal-grid {
-  grid-template-rows: 5fr 2fr 2fr;
+  grid-template-rows: 5fr 2fr;
 }
 
 /* Customizing the scrollbar track (the part the thumb moves along) */

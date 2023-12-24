@@ -1,7 +1,6 @@
 import { Box, Button } from "@chakra-ui/react"
 import Image from "next/image"
 import React from "react"
-import { ImageCarousel } from "./image-carousel"
 
 const LogoContent = () => {
   return (
@@ -14,7 +13,7 @@ const LogoContent = () => {
         justifyContent="center"
         h="100%"
         gap="2"
-        className="fixed"
+        className=""
         // ml="12rem"
         // mt="18rem"
       >

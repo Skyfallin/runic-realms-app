@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { Pagination, Navigation, EffectCoverflow } from "swiper/modules"
 import SwiperCore from "swiper"
 import Image from "next/image"
+import { Box } from "@chakra-ui/react"
 
 // install Swiper modules
 SwiperCore.use([Pagination, Navigation, EffectCoverflow])
@@ -15,31 +16,33 @@ export const images = [
 
 const ImageCarousel = () => {
   return (
-    <Swiper
-      navigation
-      centeredSlides
-      slidesPerView={3}
-      loop
-      pagination={{ clickable: false }}
-      effect="coverflow"
-      modules={[Navigation, Pagination]}
-      onSwiper={(swiper) => console.log(swiper)}
-      className="h-96 w-full rounded-lg"
-    >
-      {images.map((image, index) => (
-        <SwiperSlide key={index}>
-          <div className="flex h-full w-full items-center justify-center">
-            <Image
-              src={image.src}
-              alt={image.alt}
-              height={225}
-              width={400}
-              className="block  object-cover"
-            />
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <Box position="absolute" bottom="0" bg="blue.500">
+      <Swiper
+        navigation
+        centeredSlides
+        slidesPerView={3}
+        loop
+        pagination={{ clickable: false }}
+        effect="coverflow"
+        modules={[Navigation, Pagination]}
+        onSwiper={(swiper) => console.log(swiper)}
+        className="h-96 w-full rounded-lg"
+      >
+        {images.map((image, index) => (
+          <SwiperSlide key={index}>
+            <div className="flex h-full w-full items-center justify-center">
+              <Image
+                src={image.src}
+                alt={image.alt}
+                height={225}
+                width={400}
+                className="block  object-cover"
+              />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </Box>
     // <Swiper
     //   slidesPerView={3}
     //   centeredSlides={true}
