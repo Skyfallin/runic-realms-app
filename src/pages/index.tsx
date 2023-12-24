@@ -1,6 +1,7 @@
 import { Box } from "@chakra-ui/react"
 import Head from "next/head"
 import React from "react"
+import { ImageCarousel } from "~/components/carousel"
 import Logo from "~/components/logo"
 import { Navigation } from "~/components/navigation"
 
@@ -15,9 +16,10 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="background portal-grid grid min-h-screen grid-cols-2 ">
-        <Box className="top-left-container bg-green-500 opacity-50">
+        <Box className="top-left-container">
           {/* bg-green-500 opacity-50 */}
           <Logo />
+          {/* <ImageCarousel /> */}
         </Box>
         <Box
           display="flex"

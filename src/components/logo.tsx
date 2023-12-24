@@ -1,28 +1,37 @@
 import { Box, Button } from "@chakra-ui/react"
 import Image from "next/image"
 import React from "react"
+import { ImageCarousel } from "./carousel"
 
 const Logo = () => {
   return (
     <>
-      <Box className="absolute right-0 top-1/2 -translate-y-3/4 transform ">
+      <Box
+        display="flex"
+        flexDirection="column"
+        // background="red.500"
+        alignItems="center"
+        justifyContent="center"
+        h="100%"
+        gap="4"
+      >
         <Image
           src="/text-logo.png"
           alt="Description"
           width={700}
           height={350}
           objectFit="cover"
+          // className="bg-blue-500"
         />
-        <Box className="absolute right-1/2 top-[calc(50%+75px)] translate-x-1/2 transform">
-          <Button
-            className="button box-shadow logo-button"
-            color="white"
-            size="lg"
-            w={[50, 100, 150]}
-          >
-            PLAY NOW
-          </Button>
-        </Box>
+        <Button
+          className="button box-shadow logo-button"
+          color="white"
+          size="lg"
+          w={[50, 100, 150]}
+        >
+          PLAY NOW
+        </Button>
+        <ImageCarousel />
       </Box>
     </>
   )

@@ -1,10 +1,24 @@
 import React, { useState } from "react"
 import Image from "next/image"
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa"
-import { Button } from "@chakra-ui/react"
-import { Box } from "framer-motion"
+import { Box, Button } from "@chakra-ui/react"
 
-const ImageCarousel = ({ images }) => {
+type ImageCarouselProps = {
+  images: Array<React.ImgHTMLAttributes<HTMLImageElement>>
+}
+
+const images = [
+  "/azana-pixel-perfection.png",
+  //   <Image
+  //     src="/text-logo.png"
+  //     alt="Description"
+  //     width={700}
+  //     height={350}
+  //     objectFit="cover"
+  //   />,
+]
+
+const ImageCarousel = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   const goToPrevious = () => {
@@ -27,8 +41,12 @@ const ImageCarousel = ({ images }) => {
 
       <Image
         src={images[currentImageIndex]}
+        // src="/azana-pixel-perfection.png"
         alt="Carousel Image"
-        borderRadius="md"
+        width={250}
+        height={141}
+        objectFit="cover"
+        // borderRadius="md"
       />
 
       <Button onClick={goToNext} className="absolute right-0">
