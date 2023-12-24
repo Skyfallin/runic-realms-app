@@ -30,8 +30,17 @@ const ImageCarousel = ({ ...boxProps }) => {
   }
 
   return (
-    <Box className="relative flex items-center justify-center" {...boxProps}>
-      <Button onClick={goToPrevious} className="absolute left-0">
+    <Box
+      className="relative flex items-center justify-center"
+      {...boxProps}
+      gap={"2"}
+    >
+      <Button
+        onClick={goToPrevious}
+        className="absolute left-0"
+        color="white"
+        variant="ghost"
+      >
         <FaArrowLeft />
       </Button>
 
@@ -42,10 +51,15 @@ const ImageCarousel = ({ ...boxProps }) => {
         width={300}
         height={169}
         objectFit="cover"
-        className="rounded"
+        className="rounded shadow-inner"
       />
 
-      <Button onClick={goToNext} className="absolute right-0">
+      <Button
+        onClick={goToNext}
+        className="absolute right-0"
+        color="white"
+        variant="ghost"
+      >
         <FaArrowRight />
       </Button>
     </Box>

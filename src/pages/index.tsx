@@ -1,7 +1,7 @@
 import { Box } from "@chakra-ui/react"
 import Head from "next/head"
 import React from "react"
-import Logo from "~/components/logo"
+import LogoContent from "~/components/logo-content"
 import { Navigation } from "~/components/navigation"
 
 const Home = () => {
@@ -17,7 +17,7 @@ const Home = () => {
       <main className="background portal-grid grid min-h-screen grid-cols-2 ">
         <Box className="top-left-container">
           {/* bg-green-500 opacity-50 */}
-          <Logo />
+          <LogoContent />
         </Box>
         <Box display="flex" className="footer" flexDirection={"column"}></Box>
         <Navigation activeIndex={activeIndex} setActiveIndex={setActiveIndex} />

@@ -4,8 +4,9 @@ import { FaTwitter, FaFacebook, FaLinkedin } from "react-icons/fa"
 
 const SocialPanel = () => {
   return (
-    <Box className="fixed left-0 top-1/2 -translate-y-1/2 transform">
+    <Box className="fixed left-0  transform">
       {/* Social media icons will go here */}
+      <FaTwitter />
     </Box>
   )
 }

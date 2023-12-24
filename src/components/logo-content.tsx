@@ -3,7 +3,7 @@ import Image from "next/image"
 import React from "react"
 import { ImageCarousel } from "./carousel"
 
-const Logo = () => {
+const LogoContent = () => {
   return (
     <>
       <Box
@@ -13,7 +13,7 @@ const Logo = () => {
         alignItems="center"
         justifyContent="center"
         h="100%"
-        gap="4"
+        gap="2"
         ml="4rem"
         mt="4rem"
       >
@@ -23,7 +23,6 @@ const Logo = () => {
           width={700}
           height={350}
           objectFit="cover"
-          // className="bg-blue-500"
         />
         <Button
           className="button box-shadow logo-button"
@@ -39,4 +38,4 @@ const Logo = () => {
   )
 }
 
-export default Logo
+export default LogoContent
