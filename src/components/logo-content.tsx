@@ -15,7 +15,7 @@ const LogoContent = () => {
         gap="2"
         className=""
         // ml="12rem"
-        // mt="18rem"
+        // mt="16rem"
       >
         <Image
           src="/text-logo.png"
