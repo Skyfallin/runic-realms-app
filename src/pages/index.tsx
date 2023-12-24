@@ -19,11 +19,7 @@ const Home = () => {
           {/* bg-green-500 opacity-50 */}
           <Logo />
         </Box>
-        <Box
-          display="flex"
-          className="bottom-container"
-          flexDirection={"column"}
-        ></Box>
+        <Box display="flex" className="footer" flexDirection={"column"}></Box>
         <Navigation activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
       </main>
     </>

@@ -14,7 +14,8 @@ const Logo = () => {
         justifyContent="center"
         h="100%"
         gap="4"
-        mt="6rem"
+        ml="4rem"
+        mt="4rem"
       >
         <Image
           src="/text-logo.png"

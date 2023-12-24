@@ -53,7 +53,7 @@
 .top-right-container {
 }
 
-.bottom-container {
+.footer {
   grid-row: 2;
   grid-column: span 2;
 }
