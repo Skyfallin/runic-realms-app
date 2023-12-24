@@ -22,10 +22,8 @@ const Navigation: React.FC<Readonly<RunicNavigationProps>> = ({
   const determineClassName = (label: string, index: number): string => {
     if (label === "Store") {
       return "shiny-gold-button"
-    } else if (index === activeIndex) {
-      return ""
     }
-    return ""
+    return "outline-button"
   }
 
   return (

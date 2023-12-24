@@ -25,6 +25,26 @@
   box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.3); /* Less intense shadow for non-hover state */
 }
 
+/* .outline-button {
+  /* background-color: transparent !important; 
+  transition:
+    background-color 0.3s,
+    border-color 0.3s,
+    color 0.3s; 
+}
+*/
+
+.outline-button {
+  /* border-color: #2b6cb0; */
+}
+
+.outline-button:hover {
+  background: transparent !important;
+  /* color: #2b6cb0; */
+  /* border-color: #2b6cb0; */
+  border-width: 2px;
+}
+
 .top-left-container {
   position: relative;
   grid-column: span 1;
