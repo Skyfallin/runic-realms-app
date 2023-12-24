@@ -16,14 +16,13 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="background portal-grid grid min-h-screen grid-cols-4 grid-rows-2">
-        <Box className="logo-content-container">
-          {/* bg-green-500 opacity-50 */}
+        <Box className="logo-content-container bg-green-500 opacity-50">
           <LogoContent />
         </Box>
-        <Box position="relative">
+        <Box position="relative" className=" bg-blue-500 opacity-50">
           <ImageCarousel />
         </Box>
-        <Box display="flex" className="footer" flexDirection={"column"}></Box>
+        <Box className="footer">Test</Box>
         <Navigation activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
       </main>
     </>
