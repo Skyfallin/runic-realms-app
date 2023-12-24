@@ -15,10 +15,10 @@ const Logo = () => {
         />
         <Box className="absolute right-1/2 top-[calc(50%+75px)] translate-x-1/2 transform">
           <Button
-            className="green-gradient box-shadow"
+            className="button box-shadow logo-button"
             color="white"
+            size="lg"
             w={[50, 100, 150]}
-            borderRadius={"sm"}
           >
             PLAY NOW
           </Button>

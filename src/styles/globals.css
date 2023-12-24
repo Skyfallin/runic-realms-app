@@ -11,7 +11,18 @@
 }
 
 .button {
-  background-color: #1f7a8c;
+  background-color: #1f7a8c !important;
+}
+
+.logo-button {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.logo-button:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.3); /* Less intense shadow for non-hover state */
 }
 
 .top-left-container {
@@ -28,52 +39,9 @@
 }
 
 .box-shadow {
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-}
-
-.green-gradient {
-  position: relative;
-  background: linear-gradient(to right, #1f7a8c, #84dd63) !important;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-weight: bold;
-  border-radius: 5px;
-  overflow: hidden;
-  transition:
-    transform 0.3s,
-    box-shadow 0.3s;
-}
-
-.green-gradient::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    45deg,
-    transparent,
-    transparent 49%,
-    white 50%,
-    transparent 51%,
-    transparent
-  );
-  background-size: 300% 300%;
-  background-position: 100% 0;
-  transition: background-position 0.3s;
-}
-
-.green-gradient:hover {
-  transform: scale(1.05);
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
-}
-
-.green-gradient:hover::before {
-  background-position: 0 100%;
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
 }
 
 .shiny-gold-button {
