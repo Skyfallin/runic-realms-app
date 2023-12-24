@@ -33,6 +33,12 @@
   border-width: 2px;
 }
 
+.logo-content-container {
+  position: absolute;
+  /* grid-row: span 2; */
+  /* grid-column: span 2; */
+}
+
 .top-left-container {
   position: relative;
   grid-column: span 1;
@@ -41,9 +47,16 @@
 .top-right-container {
 }
 
-.footer {
+.middle-row {
+  /* background: purple; */
   grid-row: 2;
-  grid-column: span 2;
+  grid-column: 2;
+}
+
+.footer {
+  background: red;
+  grid-row: 3;
+  grid-column: span 3;
 }
 
 .box-shadow {
@@ -97,7 +110,7 @@
 }
 
 .portal-grid {
-  grid-template-rows: 5fr 2fr;
+  grid-template-rows: 5fr 2fr 2fr;
 }
 
 /* Customizing the scrollbar track (the part the thumb moves along) */

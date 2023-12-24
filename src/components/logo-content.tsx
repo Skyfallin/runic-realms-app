@@ -1,7 +1,7 @@
 import { Box, Button } from "@chakra-ui/react"
 import Image from "next/image"
 import React from "react"
-import { ImageCarousel } from "./carousel"
+import { ImageCarousel } from "./image-carousel"
 
 const LogoContent = () => {
   return (
@@ -14,8 +14,9 @@ const LogoContent = () => {
         justifyContent="center"
         h="100%"
         gap="2"
-        ml="4rem"
-        mt="4rem"
+        className="fixed"
+        // ml="12rem"
+        // mt="18rem"
       >
         <Image
           src="/text-logo.png"
@@ -32,7 +33,6 @@ const LogoContent = () => {
         >
           PLAY NOW
         </Button>
-        <ImageCarousel mt="8" />
       </Box>
     </>
   )
