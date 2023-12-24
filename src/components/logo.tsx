@@ -5,7 +5,7 @@ import React from "react"
 const Logo = () => {
   return (
     <>
-      <Box className="absolute right-0 top-1/2 -translate-y-1/2 transform ">
+      <Box className="absolute right-0 top-1/2 -translate-y-3/4 transform ">
         <Image
           src="/text-logo.png"
           alt="Description"
