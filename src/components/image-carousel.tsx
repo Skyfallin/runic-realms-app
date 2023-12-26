@@ -51,7 +51,7 @@ const ImageCarousel = () => {
       </Flex>
 
       {/* Pagination buttons */}
-      {/* <Flex justify="center" bottom={2} w="full">
+      <Flex justify="center" bottom={2} w="full">
         {images.map((_, index) => (
           <Box
             key={index}
@@ -65,7 +65,7 @@ const ImageCarousel = () => {
             onClick={() => setCurrentImage(index)}
           />
         ))}
-      </Flex> */}
+      </Flex>
 
       {/* Icon buttons */}
       <Flex
