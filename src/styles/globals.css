@@ -8,11 +8,22 @@ body {
 }
 
 .background {
+  position: relative;
   background-image: url("/background-full.png");
   background-size: cover; /* or contain based on your need */
   background-position: center;
   background-repeat: no-repeat;
   height: 125vh;
+}
+
+.background::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 10%;
+  background: linear-gradient(to top, #654321, transparent);
 }
 
 /* Use a pseudo-element or an additional div for the repeating gradient */
