@@ -21,7 +21,7 @@ const Navigation: React.FC<Readonly<RunicNavigationProps>> = ({
 
   const determineClassName = (label: string, index: number): string => {
     if (label === "Store") {
-      return "shiny-gold-button"
+      return "highlight-button box-shadow"
     }
     return "outline-button"
   }
@@ -34,7 +34,7 @@ const Navigation: React.FC<Readonly<RunicNavigationProps>> = ({
             <Button
               className={determineClassName(payload.label, index)}
               color="white"
-              borderRadius={"full"}
+              // borderRadius={"full"}
               key={payload.label}
               onClick={() => setActiveIndex(index)}
               width={[48, 96, 144]}
