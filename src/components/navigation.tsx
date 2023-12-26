@@ -34,7 +34,6 @@ const Navigation: React.FC<Readonly<RunicNavigationProps>> = ({
             <Button
               className={determineClassName(payload.label, index)}
               color="white"
-              // borderRadius={"full"}
               key={payload.label}
               onClick={() => setActiveIndex(index)}
               width={[48, 96, 144]}

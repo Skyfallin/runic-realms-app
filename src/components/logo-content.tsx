@@ -7,7 +7,6 @@ const LogoContent = () => {
     <Box
       display="flex"
       flexDirection="column"
-      // background="red.500"
       alignItems="center"
       justifyContent="center"
       h="100%"
