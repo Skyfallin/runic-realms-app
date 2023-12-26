@@ -16,7 +16,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="background portal-grid grid min-h-screen grid-cols-4 grid-rows-2">
-        <Box className="logo-content-container">
+        <Box className="logo-content-container row-span-2">
           <LogoContent />
         </Box>
         <Box

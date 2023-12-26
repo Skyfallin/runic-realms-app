@@ -32,7 +32,7 @@ const ImageCarousel = () => {
       overflow="hidden"
       borderRadius="md"
       // className="shadow-lg"
-      maxW="55%"
+      maxW="50%"
       mt="8"
     >
       <Flex

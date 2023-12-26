@@ -34,9 +34,6 @@
 }
 
 .logo-content-container {
-  /* background: red;
-  opacity: 0.25; */
-  /* grid-row: span 2; */
   grid-column: 2;
 }
 
@@ -44,9 +41,6 @@
   position: relative;
   grid-column: span 1;
   grid-row: span 2;
-}
-
-.top-right-container {
 }
 
 .middle-row {
