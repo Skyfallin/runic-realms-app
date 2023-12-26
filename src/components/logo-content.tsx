@@ -14,10 +14,10 @@ const LogoContent = () => {
       gap="2"
     >
       <Image
-        src="/text-logo.png"
+        src="/runic-realms-text.png"
         alt="Description"
-        width={700}
-        height={350}
+        width={2800}
+        height={500}
         objectFit="cover"
       />
       <Button
