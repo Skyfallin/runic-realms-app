@@ -1,6 +1,9 @@
 import { Box, Button, ButtonGroup } from "@chakra-ui/react"
+import { useRouter } from "next/router"
+import { JSX } from "react"
 import { FaBullhorn, FaCoins, FaHome, FaMap } from "react-icons/fa"
 import { MdForum } from "react-icons/md"
+import { type ButtonPayload } from "~/types/button-payload"
 
 type RunicNavigationProps = {
   activeIndex: number
@@ -11,12 +14,24 @@ const Navigation: React.FC<Readonly<RunicNavigationProps>> = ({
   activeIndex,
   setActiveIndex,
 }) => {
-  const buttons = [
-    { label: "Home", icon: <FaHome />, type: "internal" },
-    { label: "News", icon: <FaBullhorn />, type: "external" },
-    { label: "Store", icon: <FaCoins />, type: "external" },
-    { label: "Map", icon: <FaMap />, type: "internal" },
-    { label: "Forums", icon: <MdForum />, type: "external" },
+  const router = useRouter()
+
+  const buttons: Array<ButtonPayload> = [
+    { label: "Home", icon: <FaHome />, type: "internal", url: "" },
+    {
+      label: "News",
+      icon: <FaBullhorn />,
+      type: "internal",
+      url: "/forums/news",
+    },
+    {
+      label: "Store",
+      icon: <FaCoins />,
+      type: "external",
+      url: "https://runicrealms.buycraft.net/",
+    },
+    { label: "Map", icon: <FaMap />, type: "internal", url: "/map" },
+    { label: "Forums", icon: <MdForum />, type: "internal", url: "/forums" },
   ]
 
   const determineClassName = (label: string, index: number): string => {
@@ -24,6 +39,15 @@ const Navigation: React.FC<Readonly<RunicNavigationProps>> = ({
       return "highlight-button box-shadow"
     }
     return "outline-button"
+  }
+
+  const handleClick = async (payload: ButtonPayload, index: number) => {
+    setActiveIndex(index)
+    if (payload.type === "external") {
+      window.location.href = payload.url
+    } else {
+      await router.push(payload.url)
+    }
   }
 
   return (
@@ -35,7 +59,7 @@ const Navigation: React.FC<Readonly<RunicNavigationProps>> = ({
               className={determineClassName(payload.label, index)}
               color="white"
               key={payload.label}
-              onClick={() => setActiveIndex(index)}
+              onClick={() => handleClick(payload, index)}
               width={[48, 96, 144]}
               variant={"ghost"}
             >
