@@ -1,6 +1,7 @@
 import { Box } from "@chakra-ui/react"
 import Head from "next/head"
 import React from "react"
+import ImageCarousel from "~/components/image-carousel"
 import LogoContent from "~/components/logo-content"
 import { Navigation } from "~/components/navigation"
 
@@ -32,19 +33,34 @@ const Home = () => {
             gridRow={1}
             gridColumn={2}
           ></Box>
+          <Box className="" gridRow={1} gridColumn={3}>
+            <ImageCarousel />
+          </Box>
           <Box
             className="bg-blue-500 opacity-50"
             gridRow={2}
             gridColumn={2}
           ></Box>
           <Box
-            className="bg-pink-500 opacity-50"
-            gridRow={1}
+            className="bg-yellow-500 opacity-50"
+            gridRow={2}
             gridColumn={3}
+          ></Box>
+
+          <Box
+            className="bg-purple-500 opacity-50"
+            gridRow={3}
+            gridColumn={2}
+          ></Box>
+          <Box className="" gridRow={3} gridColumn={3}></Box>
+          <Box
+            className="bg-blue-500 opacity-50"
+            gridRow={4}
+            gridColumn={2}
           ></Box>
           <Box
             className="bg-yellow-500 opacity-50"
-            gridRow={2}
+            gridRow={4}
             gridColumn={3}
           ></Box>
         </section>
