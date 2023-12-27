@@ -49,12 +49,12 @@ body::after {
 
 .fade-in {
   opacity: 0;
-  animation: fadeInAnimation ease-in 0.5s;
+  animation: fadeInAnimation ease-in 1s;
   animation-fill-mode: forwards; /* This keeps the element visible after the animation completes */
 }
 
 .fade-in-delayed {
-  animation-delay: 0.5s; /* Starts the animation after a delay */
+  animation-delay: 1s; /* Starts the animation after a delay */
 }
 
 @keyframes fadeInAnimation {
@@ -189,6 +189,14 @@ body::after {
 ::-webkit-scrollbar {
   width: 10px; /* for vertical scrollbars */
   height: 10px; /* for horizontal scrollbars */
+}
+
+.navbar {
+  position: fixed;
+  right: 2rem;
+  top: 0;
+  padding: 1rem;
+  z-index: 9999; /* This value should be higher than that of .background::after */
 }
 
 /* @media (max-width: 768px) {

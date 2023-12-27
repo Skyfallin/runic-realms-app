@@ -51,26 +51,24 @@ const Navigation: React.FC<Readonly<RunicNavigationProps>> = ({
   }
 
   return (
-    <Box className="fade-in fade-in-delayed fixed right-8 top-0 p-4">
-      <Box className="flex space-x-8">
-        <ButtonGroup spacing="1rem" className="drop-shadow-2xl">
-          {buttons.map((payload, index) => (
-            <Button
-              className={determineClassName(payload.label, index)}
-              color="white"
-              key={payload.label}
-              onClick={() => handleClick(payload, index)}
-              width={[48, 96, 144]}
-              variant={"ghost"}
-            >
-              <Box display="flex" alignItems="center" gap="2">
-                {payload.icon}
-                {payload.label}
-              </Box>
-            </Button>
-          ))}
-        </ButtonGroup>
-      </Box>
+    <Box className="navbar fade-in fade-in-delayed">
+      <ButtonGroup spacing="1rem" className="drop-shadow-2xl">
+        {buttons.map((payload, index) => (
+          <Button
+            className={determineClassName(payload.label, index)}
+            color="white"
+            key={payload.label}
+            onClick={() => handleClick(payload, index)}
+            width={[48, 96, 144]}
+            variant={"ghost"}
+          >
+            <Box display="flex" alignItems="center" gap="2">
+              {payload.icon}
+              {payload.label}
+            </Box>
+          </Button>
+        ))}
+      </ButtonGroup>
     </Box>
   )
 }
