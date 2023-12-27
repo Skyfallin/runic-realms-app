@@ -22,8 +22,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 10%;
-  background: linear-gradient(to top, #654321, transparent);
+  height: 22.5%;
+  background: url("/transition-paper.png");
 }
 
 /* Use a pseudo-element or an additional div for the repeating gradient */
