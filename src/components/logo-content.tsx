@@ -1,8 +1,34 @@
-import { Box, Button } from "@chakra-ui/react"
+import { Box, Button, useToast } from "@chakra-ui/react"
 import Image from "next/image"
 import React from "react"
 
+const ip = "play.runicrealms.com"
+
 const LogoContent = () => {
+  const toast = useToast()
+
+  const showToast = () => {
+    toast({
+      title: "IP copied to clipboard!",
+      description: "Paste our IP in Minecraft → Multiplayer to play!",
+      position: "top-left",
+      status: "success",
+      duration: 5000,
+      isClosable: true,
+    })
+  }
+
+  const handleClick = () => {
+    navigator.clipboard.writeText(ip).then(
+      () => {
+        showToast()
+      },
+      () => {
+        console.error("Failed to copy text.")
+      },
+    )
+  }
+
   return (
     <Box
       display="flex"
@@ -24,6 +50,7 @@ const LogoContent = () => {
         color="white"
         size="lg"
         w={[50, 100, 150]}
+        onClick={() => handleClick()}
       >
         PLAY NOW
       </Button>
