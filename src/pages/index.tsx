@@ -28,24 +28,25 @@ const Home = () => {
           />
         </section>
         <section className="scrolling-content">
+          <Box gridRow={1} gridColumn={2}>
+            <ImageCarousel />
+          </Box>
           <Box
             className="bg-purple-500 opacity-50"
             gridRow={1}
-            gridColumn={2}
+            gridColumn={3}
           ></Box>
-          <Box className="" gridRow={1} gridColumn={3}>
-            <ImageCarousel />
-          </Box>
           <Box
             className="bg-blue-500 opacity-50"
             gridRow={2}
             gridColumn={2}
           ></Box>
-          <Box
-            className="bg-yellow-500 opacity-50"
-            gridRow={2}
-            gridColumn={3}
-          ></Box>
+          <Box className="" gridRow={2} gridColumn={3}>
+            <video controls={false} autoPlay muted loop>
+              <source src="/video/tutorial-island.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </Box>
 
           <Box
             className="bg-purple-500 opacity-50"
