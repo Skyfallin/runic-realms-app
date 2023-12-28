@@ -69,13 +69,13 @@ body {
   background-color: #1f7a8c !important;
 }
 
-.logo-button {
+.zoom-on-hover {
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
 }
 
-.logo-button:hover {
+.zoom-on-hover:hover {
   transform: scale(1.1);
   /* box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.3); Less intense shadow for non-hover state */
   box-shadow:

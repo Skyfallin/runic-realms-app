@@ -46,7 +46,7 @@ const LogoContent = () => {
         objectFit="cover"
       />
       <Button
-        className="button box-shadow logo-button"
+        className="button box-shadow zoom-on-hover"
         color="white"
         size="lg"
         w={[50, 100, 150]}

@@ -1,9 +1,10 @@
-import { Box } from "@chakra-ui/react"
+import { Box, Button } from "@chakra-ui/react"
 import Head from "next/head"
 import React from "react"
 import ImageCarousel from "~/components/image-carousel"
 import LogoContent from "~/components/logo-content"
 import { Navigation } from "~/components/navigation"
+import { StoreIcons } from "~/components/store-icons"
 
 const Home = () => {
   const [activeIndex, setActiveIndex] = React.useState(0)
@@ -17,11 +18,11 @@ const Home = () => {
       </Head>
       <main className="background">
         <section className="initial-view">
-          <Box className="logo-content-container fade-in bg-red-500">
+          <Box className="logo-content-container fade-in">
             <LogoContent />
           </Box>
           <Box position="relative" display="flex" justifyContent="center"></Box>
-          <Box className="footer-right bg-green-500 opacity-50"></Box>
+          <Box className="footer-right"></Box>
           <Navigation
             activeIndex={activeIndex}
             setActiveIndex={setActiveIndex}
@@ -41,29 +42,53 @@ const Home = () => {
             gridRow={2}
             gridColumn={2}
           ></Box>
-          <Box className="" gridRow={2} gridColumn={3}>
-            <video controls={false} autoPlay muted loop>
+          <Box gridRow={2} gridColumn={3} width={"90%"} mx="auto" my="auto">
+            <video
+              controls={false}
+              autoPlay
+              disablePictureInPicture
+              muted
+              loop
+              playsInline
+              preload="auto"
+              className="box-shadow zoom-on-hover rounded-md"
+            >
               <source src="/video/tutorial-island.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </Box>
 
           <Box
-            className="bg-purple-500 opacity-50"
+            className="box-shadow zoom-on-hover rounded-md"
             gridRow={3}
             gridColumn={2}
-          ></Box>
+            width={"90%"}
+            mx="auto"
+            my="auto"
+          >
+            <video
+              controls={false}
+              autoPlay
+              disablePictureInPicture
+              muted
+              loop
+              playsInline
+              preload="auto"
+              className="box-shadow zoom-on-hover rounded-md"
+            >
+              <source src="/video/tutorial-island.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </Box>
           <Box className="" gridRow={3} gridColumn={3}></Box>
-          <Box
-            className="bg-blue-500 opacity-50"
-            gridRow={4}
-            gridColumn={2}
-          ></Box>
-          <Box
-            className="bg-yellow-500 opacity-50"
-            gridRow={4}
-            gridColumn={3}
-          ></Box>
+          <Box gridRow={4} gridColumn={2} mx="auto" my="auto">
+            <Button size="lg" className="highlight-button box-shadow">
+              Take me to the store!
+            </Button>
+          </Box>
+          <Box gridRow={4} gridColumn={3} mx="auto" my="auto">
+            <StoreIcons />
+          </Box>
         </section>
       </main>
     </>
