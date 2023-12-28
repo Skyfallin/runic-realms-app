@@ -44,6 +44,7 @@ const LogoContent = () => {
         width={2800}
         height={500}
         objectFit="cover"
+        priority={true}
       />
       <Button
         className="button box-shadow zoom-on-hover"

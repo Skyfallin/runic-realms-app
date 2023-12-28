@@ -1,10 +1,17 @@
 import React, { useState } from "react"
-import { Box, Flex, IconButton, useBreakpointValue } from "@chakra-ui/react"
+import { Box, Flex, IconButton } from "@chakra-ui/react"
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa"
+import { type ImagePayload } from "~/types/image-payload"
 
-const images = [
-  "/carousel-images/azana-pixel-perfection.png",
-  "/carousel-images/ignaroths-lair.png",
+const images: Array<ImagePayload> = [
+  {
+    alt: "Image Azana City",
+    url: "/carousel-images/azana-pixel-perfection.png",
+  },
+  {
+    alt: "Image Ignaroth's Lair",
+    url: "/carousel-images/ignaroths-lair.png",
+  },
 ]
 
 const ImageCarousel = () => {
@@ -41,10 +48,11 @@ const ImageCarousel = () => {
         transition="transform 0.5s ease-in-out"
         transform={`translateX(-${currentImage * 100}%)`}
       >
-        {images.map((src, index) => (
+        {images.map((payload, index) => (
           <img
-            src={src}
+            src={payload.url}
             alt={`Slide ${index}`}
+            key={payload.alt}
             className="h-full w-full object-cover"
           />
         ))}
@@ -52,9 +60,9 @@ const ImageCarousel = () => {
 
       {/* Pagination buttons */}
       <Flex justify="center" bottom={2} w="full">
-        {images.map((_, index) => (
+        {images.map((payload, index) => (
           <Box
-            key={index}
+            key={payload.alt}
             w={2}
             h={2}
             bg={currentImage === index ? "whiteAlpha.900" : "whiteAlpha.500"}
