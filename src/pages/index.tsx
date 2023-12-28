@@ -1,10 +1,9 @@
-import { Box, Button, Text } from "@chakra-ui/react"
+import { Box } from "@chakra-ui/react"
 import Head from "next/head"
 import React from "react"
-import ImageCarousel from "~/components/image-carousel"
 import LogoContent from "~/components/logo-content"
 import { Navigation } from "~/components/navigation"
-import { StoreIcons } from "~/components/store-icons"
+import { ScrollContent } from "~/components/scroll-content"
 
 const Home = () => {
   const [activeIndex, setActiveIndex] = React.useState(0)
@@ -29,78 +28,7 @@ const Home = () => {
           />
         </section>
         <section className="scrolling-content">
-          <Box gridRow={1} gridColumn={2}>
-            <ImageCarousel />
-          </Box>
-          <Box gridRow={1} gridColumn={3}></Box>
-          <Box gridRow={2} gridColumn={2}></Box>
-          <Box gridRow={2} gridColumn={3} width="90%" mx="auto" my="auto">
-            <video
-              controls={false}
-              autoPlay
-              disablePictureInPicture
-              muted
-              loop
-              playsInline
-              preload="auto"
-              className="box-shadow zoom-on-hover rounded-md"
-            >
-              <source src="/video/tutorial-island.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </Box>
-
-          <Box
-            className="box-shadow zoom-on-hover rounded-md"
-            gridRow={3}
-            gridColumn={2}
-            width="90%"
-            mx="auto"
-            my="auto"
-          >
-            <video
-              controls={false}
-              autoPlay
-              disablePictureInPicture
-              muted
-              loop
-              playsInline
-              preload="auto"
-              className="box-shadow zoom-on-hover rounded-md"
-            >
-              <source src="/video/tutorial-island.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </Box>
-          <Box className="" gridRow={3} gridColumn={3}></Box>
-          <Box
-            display="flex"
-            flexDirection="column"
-            gridRow={4}
-            gridColumn={2}
-            mx="auto"
-            my="auto"
-          >
-            <Text>Support the server with ranks!</Text>
-            <Button
-              size="lg"
-              className="button highlight-button box-shadow"
-              color="white"
-            >
-              Take me to the store!
-            </Button>
-          </Box>
-          <Box gridRow={4} gridColumn={3} mx="auto" my="auto">
-            <StoreIcons />
-          </Box>
-          <Box
-            gridRow={5}
-            className="col-span-4 bg-red-500"
-            mx="auto"
-            my="auto"
-            height="100%"
-            width="100%"
-          ></Box>
+          <ScrollContent />
         </section>
       </main>
     </>
