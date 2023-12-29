@@ -113,7 +113,14 @@ const ScrollContent = () => {
         mx="auto"
         my="auto"
       >
-        <Text>Support the server with ranks!</Text>
+        <Text
+          fontSize="5xl"
+          fontWeight="bold"
+          fontFamily="'IM Fell', serif"
+          textAlign="center"
+        >
+          Support the Server
+        </Text>
         <Button
           size="lg"
           className="button highlight-button box-shadow"
