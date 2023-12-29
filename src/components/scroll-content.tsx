@@ -138,7 +138,7 @@ const ScrollContent = () => {
         </Text>
         <Button
           size="lg"
-          className="button highlight-button box-shadow"
+          className="button highlight-button box-shadow zoom-on-hover"
           color="white"
         >
           To the store!

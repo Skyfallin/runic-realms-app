@@ -42,7 +42,7 @@ const ImageCarousel = () => {
     <Box
       overflow="hidden"
       position="relative"
-      className="zoom-on-hover rounded-md"
+      className="box-shadow zoom-on-hover rounded-md"
       w="90%"
     >
       <Flex
