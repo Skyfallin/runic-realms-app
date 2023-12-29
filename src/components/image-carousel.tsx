@@ -2,15 +2,28 @@ import React, { useState } from "react"
 import { Box, Flex, IconButton } from "@chakra-ui/react"
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa"
 import { type ImagePayload } from "~/types/image-payload"
+import Image from "next/image"
 
 const images: Array<ImagePayload> = [
   {
-    alt: "Image Azana City",
-    url: "/carousel-images/azana-pixel-perfection.png",
+    alt: "Image Alterra Locations",
+    url: "/carousel-images/alterra-locations.png",
   },
   {
-    alt: "Image Ignaroth's Lair",
-    url: "/carousel-images/ignaroths-lair.png",
+    alt: "Image Class Abilities",
+    url: "/carousel-images/class-abilities.png",
+  },
+  {
+    alt: "Image Dynamic Quests",
+    url: "/carousel-images/dynamic-quests.png",
+  },
+  {
+    alt: "Image Challenging Dungeons",
+    url: "/carousel-images/challenging-dungeons.png",
+  },
+  {
+    alt: "Image Crafting and Gathering",
+    url: "/carousel-images/crafting-and-gathering.png",
   },
 ]
 
@@ -25,41 +38,26 @@ const ImageCarousel = () => {
     setCurrentImage((prev) => (prev === 0 ? images.length - 1 : prev - 1))
   }
 
-  // Adjust the box size based on the breakpoint
-  // const boxSize = useBreakpointValue({ base: "100%", md: "500px" })
-
   return (
-    <Box
-      // bg="purple"
-      // position="relative"
-      // maxW={boxSize}
-      mx="auto"
-      // position="absolute"
-      // bottom={0}
-      overflow="hidden"
-      borderRadius="md"
-      // className="shadow-lg"
-      // maxW="50%"
-      mt="8"
-    >
+    <Box overflow="hidden" position="relative" className="rounded-md" w="90%">
       <Flex
-        // w="full"
-        // height="30%"
         transition="transform 0.5s ease-in-out"
         transform={`translateX(-${currentImage * 100}%)`}
       >
         {images.map((payload, index) => (
-          <img
+          <Image
             src={payload.url}
             alt={`Slide ${index}`}
             key={payload.alt}
-            className="h-full w-full object-cover"
+            className="object-cover"
+            width={1920}
+            height={1080}
           />
         ))}
       </Flex>
 
       {/* Pagination buttons */}
-      <Flex justify="center" bottom={2} w="full">
+      <Flex justifyContent="center" bottom={2} w="full" position="absolute">
         {images.map((payload, index) => (
           <Box
             key={payload.alt}
@@ -79,10 +77,10 @@ const ImageCarousel = () => {
       <Flex
         justify="space-between"
         align="flex-end"
-        // position="absolute"
+        position="absolute"
         top="50%"
         w="full"
-        px={2}
+        px={-2}
         transform="translateY(-50%)"
       >
         <IconButton

@@ -20,8 +20,6 @@ const Home = () => {
           <Box className="logo-content-container fade-in">
             <LogoContent />
           </Box>
-          <Box position="relative" display="flex" justifyContent="center"></Box>
-          <Box className="footer-right"></Box>
           <Navigation
             activeIndex={activeIndex}
             setActiveIndex={setActiveIndex}

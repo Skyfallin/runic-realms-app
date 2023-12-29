@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Text } from "@chakra-ui/react"
+import { Box, Button, Text } from "@chakra-ui/react"
 import { StoreIcons } from "./store-icons"
 import ImageCarousel from "./image-carousel"
 import { SocialPanel } from "./social-panel"
@@ -6,7 +6,7 @@ import { SocialPanel } from "./social-panel"
 const ScrollContent = () => {
   return (
     <>
-      <Box gridRow={1} gridColumn={2}>
+      <Box gridRow={1} gridColumn={2} my="auto" mx="auto">
         <ImageCarousel />
       </Box>
       <Box
