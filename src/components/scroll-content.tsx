@@ -18,10 +18,11 @@ const ScrollContent = () => {
         alignItems="center"
       >
         <Text
-          fontSize="5xl"
+          fontSize="6xl"
           fontWeight="bold"
           fontFamily="'IM Fell English', serif"
           textAlign="center"
+          as="i"
         >
           Explore Alterra
         </Text>
@@ -43,10 +44,11 @@ const ScrollContent = () => {
         alignItems="center"
       >
         <Text
-          fontSize="5xl"
+          fontSize="6xl"
           fontWeight="bold"
           fontFamily="'IM Fell English', serif"
           textAlign="center"
+          as="i"
         >
           A Shared Adventure
         </Text>
@@ -99,10 +101,11 @@ const ScrollContent = () => {
         alignItems="center"
       >
         <Text
-          fontSize="5xl"
+          fontSize="6xl"
           fontWeight="bold"
           fontFamily="'IM Fell English', serif"
           textAlign="center"
+          as="i"
         >
           Overcome Boss Mechanics
         </Text>
@@ -119,10 +122,11 @@ const ScrollContent = () => {
         alignItems="center"
       >
         <Text
-          fontSize="5xl"
+          fontSize="6xl"
           fontWeight="bold"
           fontFamily="'IM Fell English', serif"
           textAlign="center"
+          as="i"
         >
           Support the Server
         </Text>
