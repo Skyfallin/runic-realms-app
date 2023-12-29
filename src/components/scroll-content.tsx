@@ -1,6 +1,7 @@
 import { Box, Button, Text } from "@chakra-ui/react"
 import { StoreIcons } from "./store-icons"
 import ImageCarousel from "./image-carousel"
+import { SocialPanel } from "./social-panel"
 
 const ScrollContent = () => {
   return (
@@ -8,8 +9,23 @@ const ScrollContent = () => {
       <Box gridRow={1} gridColumn={2}>
         <ImageCarousel />
       </Box>
-      <Box gridRow={1} gridColumn={3}></Box>
-      <Box gridRow={2} gridColumn={2}></Box>
+      <Box gridRow={1} gridColumn={3} mx="auto" my="auto">
+        <Text>Enter Alterra, a beautiful, hand-built 6k x 6k custom map!</Text>
+      </Box>
+      <Box
+        gridRow={2}
+        gridColumn={2}
+        display="flex"
+        flexDirection="column"
+        justifyContent="center"
+        alignItems="center"
+      >
+        <Text fontSize="6xl" fontWeight="bold" fontFamily="'IM Fell', serif">
+          A Shared Adventure
+        </Text>
+        {/* <Text fontWeight="bold">A Shared Adventure</Text> */}
+        <Text fontSize="lg">Play alone or with friends!</Text>
+      </Box>
       <Box gridRow={2} gridColumn={3} width="90%" mx="auto" my="auto">
         <video
           controls={false}
@@ -78,7 +94,9 @@ const ScrollContent = () => {
         my="auto"
         height="100%"
         width="100%"
-      ></Box>
+      >
+        <SocialPanel />
+      </Box>
     </>
   )
 }

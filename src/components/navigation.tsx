@@ -1,6 +1,5 @@
 import { Box, Button, ButtonGroup } from "@chakra-ui/react"
 import { useRouter } from "next/router"
-import { JSX } from "react"
 import { FaBullhorn, FaCoins, FaHome, FaMap } from "react-icons/fa"
 import { MdForum } from "react-icons/md"
 import { type ButtonPayload } from "~/types/button-payload"
