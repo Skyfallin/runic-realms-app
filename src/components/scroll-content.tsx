@@ -27,8 +27,11 @@ const ScrollContent = () => {
         </Text>
         <Text fontSize="lg" maxW="75%">
           Enter the Realm of Alterra--a beautiful, hand-built 6k x 6k custom
-          map! Adventure through the , icy viking villages, the ruins of Dead
-          Man's Rest,
+          map! Adventure through the spindly
+          <span className="font-bold"> Silkwood Forest</span>, brave the cold of
+          the viking village of <span className="font-bold"> Whaletown</span>,
+          or discover the secrets of the once-great ruins of
+          <span className="font-bold"> Dead Man's Rest</span>!
         </Text>
       </Box>
       <Box
