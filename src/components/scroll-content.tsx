@@ -6,7 +6,13 @@ import { SocialPanel } from "./social-panel"
 const ScrollContent = () => {
   return (
     <>
-      <Box gridRow={1} gridColumn={2} my="auto" mx="auto">
+      <Box
+        gridRow={1}
+        gridColumn={2}
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+      >
         <ImageCarousel />
       </Box>
       <Box

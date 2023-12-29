@@ -39,7 +39,12 @@ const ImageCarousel = () => {
   }
 
   return (
-    <Box overflow="hidden" position="relative" className="rounded-md" w="90%">
+    <Box
+      overflow="hidden"
+      position="relative"
+      className="zoom-on-hover rounded-md"
+      w="90%"
+    >
       <Flex
         transition="transform 0.5s ease-in-out"
         transform={`translateX(-${currentImage * 100}%)`}
