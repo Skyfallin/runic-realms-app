@@ -20,13 +20,15 @@ const ScrollContent = () => {
         <Text
           fontSize="5xl"
           fontWeight="bold"
-          fontFamily="'IM Fell', serif"
+          fontFamily="'IM Fell English', serif"
           textAlign="center"
         >
           Explore Alterra
         </Text>
-        <Text fontSize="lg">
-          Enter Alterra, a beautiful, hand-built 6k x 6k custom map!
+        <Text fontSize="lg" maxW="75%">
+          Enter the Realm of Alterra--a beautiful, hand-built 6k x 6k custom
+          map! Adventure through the , icy viking villages, the ruins of Dead
+          Man's Rest,
         </Text>
       </Box>
       <Box
@@ -40,7 +42,7 @@ const ScrollContent = () => {
         <Text
           fontSize="5xl"
           fontWeight="bold"
-          fontFamily="'IM Fell', serif"
+          fontFamily="'IM Fell English', serif"
           textAlign="center"
         >
           A Shared Adventure
@@ -96,7 +98,7 @@ const ScrollContent = () => {
         <Text
           fontSize="5xl"
           fontWeight="bold"
-          fontFamily="'IM Fell', serif"
+          fontFamily="'IM Fell English', serif"
           textAlign="center"
         >
           Overcome Boss Mechanics
@@ -107,16 +109,16 @@ const ScrollContent = () => {
       </Box>
       <Box
         display="flex"
-        flexDirection="column"
         gridRow={4}
         gridColumn={2}
-        mx="auto"
-        my="auto"
+        flexDirection="column"
+        justifyContent="center"
+        alignItems="center"
       >
         <Text
           fontSize="5xl"
           fontWeight="bold"
-          fontFamily="'IM Fell', serif"
+          fontFamily="'IM Fell English', serif"
           textAlign="center"
         >
           Support the Server
@@ -126,7 +128,7 @@ const ScrollContent = () => {
           className="button highlight-button box-shadow"
           color="white"
         >
-          Take me to the store!
+          To the store!
         </Button>
       </Box>
       <Box gridRow={4} gridColumn={3} mx="auto" my="auto">
