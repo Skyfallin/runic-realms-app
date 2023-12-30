@@ -2,11 +2,45 @@ import { Box, Button, Text } from "@chakra-ui/react"
 import { StoreIcons } from "./store-icons"
 import ImageCarousel from "./image-carousel"
 import { SocialPanel } from "./social-panel"
+import React from "react"
+import { type CarouselText } from "~/types/carousel-text"
+
+const imageTextContents: Array<CarouselText> = [
+  {
+    title: "Explore Alterra",
+    text:
+      "Enter the Realm of Alterra—a beautiful, " +
+      "hand-built 6k x 6k custom map! Adventure through the spindly Silkwood Forest, " +
+      "brave the cold of the viking village of Whaletown, " +
+      "or discover the secrets of the once-great ruins of Dead Man's Rest!",
+  },
+  {
+    title: "Choose Your Class",
+    text:
+      "Choose from 5 classes, each with 3 subclass trees to master! " +
+      "Mix-and-match your spell points to customize your character to your playstyle! " +
+      "Will you guard your allies with the astral powers of the Starweaver, " +
+      "or strike fear into your enemies as a Dreadlord?",
+  },
+  {
+    title: "Experience the Story",
+    text: "",
+  },
+  {
+    title: "Battle Bosses",
+    text: "",
+  },
+  {
+    title: "Hone Your Craft",
+    text: "",
+  },
+]
 
 const ScrollContent = () => {
+  const [currentImage, setCurrentImage] = React.useState(0)
+
   return (
     <>
-      {/* // TODO: MAKE THESE TEXT BOXES AN ARRAY AND .MAP */}
       <Box
         gridRow={1}
         gridColumn={2}
@@ -14,7 +48,10 @@ const ScrollContent = () => {
         justifyContent="center"
         alignItems="center"
       >
-        <ImageCarousel />
+        <ImageCarousel
+          currentImage={currentImage}
+          setCurrentImage={setCurrentImage}
+        />
       </Box>
       <Box
         gridRow={1}
@@ -31,15 +68,16 @@ const ScrollContent = () => {
           textAlign="center"
           as="i"
         >
-          Explore Alterra
+          {imageTextContents[currentImage]?.title}
         </Text>
         <Text fontSize="lg" maxW="75%">
-          Enter the Realm of Alterra—a beautiful, hand-built 6k x 6k custom map!
+          {imageTextContents[currentImage]?.text}
+          {/* Enter the Realm of Alterra—a beautiful, hand-built 6k x 6k custom map!
           Adventure through the spindly
           <span className="font-bold"> Silkwood Forest</span>, brave the cold of
           the viking village of <span className="font-bold"> Whaletown</span>,
           or discover the secrets of the once-great ruins of
-          <span className="font-bold"> Dead Man's Rest</span>!
+          <span className="font-bold"> Dead Man's Rest</span>! */}
         </Text>
       </Box>
       <Box
@@ -124,9 +162,9 @@ const ScrollContent = () => {
         </Text>
         <Text fontSize="lg" maxW="75%">
           Play alone or with friends! Runic Realms is designed for both solo
-          players and groups! Call your allies, hone your tradeskills, and
-          become your own fellowship by forming a{" "}
-          <span className="font-bold">Guild</span>!
+          players and groups! Call your allies, hone your{" "}
+          <span className="font-bold">tradeskills</span>, and become your own
+          fellowship by forming a <span className="font-bold">Guild</span>!
         </Text>
       </Box>
       <Box

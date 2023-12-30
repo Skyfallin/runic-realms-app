@@ -1,8 +1,13 @@
-import React, { useState } from "react"
+import React from "react"
 import { Box, Flex, IconButton } from "@chakra-ui/react"
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa"
 import { type ImagePayload } from "~/types/image-payload"
 import Image from "next/image"
+
+interface ImageCarouselProps {
+  currentImage: number
+  setCurrentImage: (currentImage: number) => void
+}
 
 const images: Array<ImagePayload> = [
   {
@@ -27,15 +32,20 @@ const images: Array<ImagePayload> = [
   },
 ]
 
-const ImageCarousel = () => {
-  const [currentImage, setCurrentImage] = useState(0)
-
+const ImageCarousel = ({
+  currentImage,
+  setCurrentImage,
+}: Readonly<ImageCarouselProps>) => {
   const handleNext = () => {
-    setCurrentImage((prev) => (prev === images.length - 1 ? 0 : prev + 1))
+    const nextImage: number =
+      currentImage === images.length - 1 ? 0 : currentImage + 1
+    setCurrentImage(nextImage)
   }
 
   const handlePrev = () => {
-    setCurrentImage((prev) => (prev === 0 ? images.length - 1 : prev - 1))
+    const prevImage: number =
+      currentImage === 0 ? images.length - 1 : currentImage - 1
+    setCurrentImage(prevImage)
   }
 
   return (
