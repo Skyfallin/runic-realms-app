@@ -34,8 +34,8 @@ const ScrollContent = () => {
           Explore Alterra
         </Text>
         <Text fontSize="lg" maxW="75%">
-          Enter the Realm of Alterra--a beautiful, hand-built 6k x 6k custom
-          map! Adventure through the spindly
+          Enter the Realm of Alterra—a beautiful, hand-built 6k x 6k custom map!
+          Adventure through the spindly
           <span className="font-bold"> Silkwood Forest</span>, brave the cold of
           the viking village of <span className="font-bold"> Whaletown</span>,
           or discover the secrets of the once-great ruins of
@@ -57,7 +57,7 @@ const ScrollContent = () => {
           textAlign="center"
           as="i"
         >
-          Take up arms!
+          Take Up Arms
         </Text>
         <Text fontSize="lg" maxW="75%">
           The Realm of Alterra features{" "}
