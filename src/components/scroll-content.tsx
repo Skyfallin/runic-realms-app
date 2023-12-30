@@ -6,6 +6,7 @@ import { SocialPanel } from "./social-panel"
 const ScrollContent = () => {
   return (
     <>
+      {/* // TODO: MAKE THESE TEXT BOXES AN ARRAY AND .MAP */}
       <Box
         gridRow={1}
         gridColumn={2}
@@ -56,9 +57,15 @@ const ScrollContent = () => {
           textAlign="center"
           as="i"
         >
-          A Shared Adventure
+          Take up arms!
         </Text>
-        <Text fontSize="lg">Play alone or with friends!</Text>
+        <Text fontSize="lg" maxW="75%">
+          The Realm of Alterra features{" "}
+          <span className="font-bold">six unique</span> and challenging
+          <span className="font-bold"> dungeons</span>, presenting increasingly
+          complex boss mechanics for the brave party willing to test their might
+          in battle!
+        </Text>
       </Box>
       <Box gridRow={2} gridColumn={3} width="90%" mx="auto" my="auto">
         <video
@@ -71,7 +78,7 @@ const ScrollContent = () => {
           preload="auto"
           className="box-shadow zoom-on-hover rounded-md"
         >
-          <source src="/video/island-vista.mp4" type="video/mp4" />
+          <source src="/video/dungeon-bossfight.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </Box>
@@ -94,7 +101,7 @@ const ScrollContent = () => {
           preload="auto"
           className="box-shadow zoom-on-hover rounded-md"
         >
-          <source src="/video/island-vista.mp4" type="video/mp4" />
+          <source src="/video/profession-tent.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </Box>
@@ -113,10 +120,13 @@ const ScrollContent = () => {
           textAlign="center"
           as="i"
         >
-          Overcome Boss Mechanics
+          Adventure Together
         </Text>
-        <Text fontSize="lg">
-          Challenging dungeon encounters and boss mechanics!
+        <Text fontSize="lg" maxW="75%">
+          Play alone or with friends! Runic Realms is designed for both solo
+          players and groups! Call your allies, hone your tradeskills, and
+          become your own fellowship by forming a{" "}
+          <span className="font-bold">Guild</span>!
         </Text>
       </Box>
       <Box
