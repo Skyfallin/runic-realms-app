@@ -188,7 +188,7 @@ body {
 }
 
 .navbar {
-  position: fixed;
+  position: absolute;
   right: 2rem;
   top: 0;
   padding: 1rem;
