@@ -11,7 +11,7 @@ body {
 
 .background {
   position: relative;
-  background-image: url("/background-full.png");
+  background-image: url("/background-full.svg");
   background-size: cover; /* or contain based on your need */
   background-position: center;
   background-repeat: no-repeat;
@@ -26,7 +26,7 @@ body {
   right: 0;
   bottom: 0;
   height: 27.5%;
-  background: url("/transition-paper-light.png");
+  background: url("/transition-paper-light.svg");
   z-index: 0;
 }
 
