@@ -20,8 +20,8 @@ const Navigation: React.FC<Readonly<RunicNavigationProps>> = ({
     {
       label: "News",
       icon: <FaBullhorn />,
-      type: "internal",
-      url: "/forums/news",
+      type: "external",
+      url: "https://www.runicrealms.com/forums/news/",
     },
     {
       label: "Store",
@@ -30,7 +30,12 @@ const Navigation: React.FC<Readonly<RunicNavigationProps>> = ({
       url: "https://runicrealms.buycraft.net/",
     },
     { label: "Map", icon: <FaMap />, type: "internal", url: "/map" },
-    { label: "Forums", icon: <MdForum />, type: "internal", url: "/forums" },
+    {
+      label: "Forums",
+      icon: <MdForum />,
+      type: "external",
+      url: "https://www.runicrealms.com/forums/",
+    },
   ]
 
   const determineClassName = (label: string, index: number): string => {
