@@ -102,13 +102,15 @@ const ImageCarousel = ({
           aria-label="Previous image"
           icon={<FaArrowLeft />}
           onClick={handlePrev}
-          className="hover:bg-opacity-50"
+          className="opacity-75 hover:opacity-100"
+          rounded="full"
         />
         <IconButton
           aria-label="Next image"
           icon={<FaArrowRight />}
           onClick={handleNext}
-          className="hover:bg-opacity-50"
+          className="opacity-75 hover:opacity-100"
+          rounded="full"
         />
       </Flex>
     </Box>

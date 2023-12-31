@@ -34,7 +34,9 @@ const imageTextContents: Array<CarouselText> = [
     title: "Earn Your Loot",
     text:
       "Venture into dark caverns or ancient fortresses to " +
-      "level-up and gain powerful weapons and armor!",
+      "level-up and gain powerful weapons and armor! " +
+      "Increase stats like intelligence and strength, " +
+      "and find unique item perks to change your playstyle!",
   },
   {
     title: "Hone Your Craft",
