@@ -1,4 +1,4 @@
-import { Box, Button, Text } from "@chakra-ui/react"
+import { Box, Button, Flex, Text } from "@chakra-ui/react"
 import { StoreIcons } from "./store-icons"
 import ImageCarousel from "./image-carousel"
 import { SocialPanel } from "./social-panel"
@@ -214,6 +214,9 @@ const ScrollContent = () => {
       </Box>
       <Box gridRow={4} gridColumn={3} mx="auto" my="auto">
         <StoreIcons />
+      </Box>
+      <Box gridRow={5} gridColumn={3} mx="auto" my="auto">
+        <Text>Copyright Runic Realms © 2018-2024</Text>
       </Box>
     </>
   )
