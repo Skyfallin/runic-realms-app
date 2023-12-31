@@ -146,7 +146,7 @@ body {
     #d4af37 25%,
     #d4af37 75%,
     #f9d71c 75%
-  );
+  ) !important;
   background-size: 200% 100%;
   background-position: 100% 0;
   color: white;
@@ -158,8 +158,7 @@ body {
 }
 
 .highlight-button:hover {
-  background-position: 0 0;
-  color: #d4af37;
+  background-image: linear-gradient(to right, white 50%, white 50%) !important;
 }
 
 /* Customizing the scrollbar track (the part the thumb moves along) */

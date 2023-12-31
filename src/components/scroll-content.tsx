@@ -4,6 +4,7 @@ import ImageCarousel from "./image-carousel"
 import { SocialPanel } from "./social-panel"
 import React from "react"
 import { type CarouselText } from "~/types/carousel-text"
+import { FaCoins } from "react-icons/fa"
 
 const imageTextContents: Array<CarouselText> = [
   {
@@ -47,6 +48,10 @@ const imageTextContents: Array<CarouselText> = [
   },
 ]
 
+const handleStoreButtonClick = () => {
+  window.location.href = "https://runicrealms.buycraft.net/"
+}
+
 const ScrollContent = () => {
   const [currentImage, setCurrentImage] = React.useState(0)
 
@@ -83,12 +88,6 @@ const ScrollContent = () => {
         </Text>
         <Text fontSize="lg" maxW="75%">
           {imageTextContents[currentImage]?.text}
-          {/* Enter the Realm of Alterra—a beautiful, hand-built 6k x 6k custom map!
-          Adventure through the spindly
-          <span className="font-bold"> Silkwood Forest</span>, brave the cold of
-          the viking village of <span className="font-bold"> Whaletown</span>,
-          or discover the secrets of the once-great ruins of
-          <span className="font-bold"> Dead Man's Rest</span>! */}
         </Text>
       </Box>
       <Box
@@ -196,24 +195,27 @@ const ScrollContent = () => {
           Support the Server
         </Text>
         <Button
-          size="lg"
-          className="button highlight-button box-shadow zoom-on-hover"
+          className="highlight-button box-shadow zoom-on-hover"
           color="white"
+          onClick={() => console.log("store")}
+          width={[48, 96, 144]}
+          variant={"ghost"}
         >
-          To the store!
+          <Box
+            display="flex"
+            alignItems="center"
+            gap="2"
+            onClick={() => handleStoreButtonClick()}
+          >
+            <FaCoins />
+            To the store!
+          </Box>
         </Button>
       </Box>
       <Box gridRow={4} gridColumn={3} mx="auto" my="auto">
         <StoreIcons />
       </Box>
-      <Box
-        gridRow={5}
-        className="col-span-4 bg-red-500"
-        mx="auto"
-        my="auto"
-        height="100%"
-        width="100%"
-      >
+      <Box gridRow={5} gridColumn={3} className="">
         <SocialPanel />
       </Box>
     </>
