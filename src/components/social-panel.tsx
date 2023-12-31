@@ -4,21 +4,21 @@ import { type ButtonPayload } from "~/types/button-payload"
 
 const iconArray: Array<ButtonPayload> = [
   {
-    label: "Reddit Icon",
+    label: "#FF4500",
     icon: <FaReddit />,
-    url: "",
+    url: "https://www.reddit.com/r/RunicRealms/",
     type: "external",
   },
   {
-    label: "Twitter Icon",
+    label: "#1DA1F2",
     icon: <FaTwitter />,
-    url: "",
+    url: "https://twitter.com/RunicRealms",
     type: "external",
   },
   {
-    label: "YouTube Icon",
+    label: "#FF0000",
     icon: <FaYoutube />,
-    url: "",
+    url: "https://www.youtube.com/@RunicRealms",
     type: "external",
   },
 ]
@@ -29,17 +29,28 @@ const handleClick = (url: string) => {
 
 const SocialPanel = () => {
   return (
-    <Box display="flex" justifyContent={"flex-end"} gap="4" my={"auto"}>
+    <Box
+      display="flex"
+      flexDirection="column"
+      gap="4"
+      position="fixed"
+      bottom="50%"
+      left="2"
+      zIndex={1}
+    >
       {iconArray.map((payload) => (
         <IconButton
           aria-label="Reddit Icon"
           icon={payload.icon}
           onClick={() => handleClick(payload.url)}
-          className="opacity-100 hover:opacity-75"
-          rounded="full"
           variant="ghost"
           fontSize="40px"
+          color="#312509"
           size="lg"
+          _hover={{
+            background: "transparent",
+            color: payload.label,
+          }}
         />
       ))}
     </Box>

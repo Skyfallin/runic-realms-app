@@ -215,9 +215,6 @@ const ScrollContent = () => {
       <Box gridRow={4} gridColumn={3} mx="auto" my="auto">
         <StoreIcons />
       </Box>
-      <Box gridRow={5} gridColumn={3} className="">
-        <SocialPanel />
-      </Box>
     </>
   )
 }

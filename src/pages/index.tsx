@@ -4,6 +4,7 @@ import React from "react"
 import LogoContent from "~/components/logo-content"
 import { Navigation } from "~/components/navigation"
 import { ScrollContent } from "~/components/scroll-content"
+import { SocialPanel } from "~/components/social-panel"
 
 const Home = () => {
   const [activeIndex, setActiveIndex] = React.useState(0)
@@ -27,6 +28,16 @@ const Home = () => {
         </section>
         <section className="scrolling-content">
           <ScrollContent />
+          {/* <Box
+            background="red"
+            my="auto"
+            position="absolute"
+            bottom={0}
+            height="50px"
+            width={50}
+          > */}
+          <SocialPanel />
+          {/* </Box> */}
         </section>
       </main>
     </>
