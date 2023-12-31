@@ -131,14 +131,7 @@ const ScrollContent = () => {
         </video>
       </Box>
 
-      <Box
-        className="box-shadow zoom-on-hover rounded-md"
-        gridRow={3}
-        gridColumn={2}
-        width="90%"
-        mx="auto"
-        my="auto"
-      >
+      <Box gridRow={3} gridColumn={2} width="90%" mx="auto" my="auto">
         <video
           controls={false}
           autoPlay
