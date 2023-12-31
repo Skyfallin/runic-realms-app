@@ -12,23 +12,23 @@ interface ImageCarouselProps {
 const images: Array<ImagePayload> = [
   {
     alt: "Image Alterra Locations",
-    url: "/carousel-images/alterra-locations.png",
+    url: "/carousel-images/alterra-locations.svg",
   },
   {
     alt: "Image Class Abilities",
-    url: "/carousel-images/class-abilities.png",
+    url: "/carousel-images/class-abilities.svg",
   },
   {
     alt: "Image Dynamic Quests",
-    url: "/carousel-images/dynamic-quests.png",
+    url: "/carousel-images/dynamic-quests.svg",
   },
   {
-    alt: "Image Challenging Dungeons",
-    url: "/carousel-images/challenging-dungeons.png",
+    alt: "Image Earn Your Loot",
+    url: "/carousel-images/earn-your-loot.svg",
   },
   {
     alt: "Image Crafting and Gathering",
-    url: "/carousel-images/crafting-and-gathering.png",
+    url: "/carousel-images/crafting-and-gathering.svg",
   },
 ]
 
