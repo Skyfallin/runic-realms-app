@@ -6,6 +6,7 @@
 
 body {
   font-family: "Lora", serif !important;
+  color: #312509 !important; /* Replace with your desired font color */
 }
 
 .background {
@@ -151,7 +152,7 @@ body {
   background-size: 200% 100%;
   background-position: 100% 0;
   color: white;
-  color: black !important;
+  color: #312509 !important;
   font-weight: bold;
   transition:
     background-position 0.5s,
