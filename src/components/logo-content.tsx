@@ -1,6 +1,7 @@
-import { Box, Button, useToast } from "@chakra-ui/react"
+import { Box, Button, IconButton, useToast } from "@chakra-ui/react"
 import Image from "next/image"
 import React from "react"
+import { PiSwordFill } from "react-icons/pi"
 
 const ip = "play.runicrealms.com"
 
@@ -48,11 +49,14 @@ const LogoContent = () => {
       <Button
         className="button box-shadow zoom-on-hover"
         color="white"
-        size="lg"
-        w={[50, 100, 150]}
         onClick={() => handleClick()}
+        w={[50, 100, 150]}
+        size="lg"
       >
-        PLAY NOW
+        <Box display="flex" alignItems="center" gap="2">
+          <PiSwordFill />
+          PLAY NOW
+        </Box>
       </Button>
     </Box>
   )
