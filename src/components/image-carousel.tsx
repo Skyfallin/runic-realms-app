@@ -1,6 +1,6 @@
 import React from "react"
 import { Box, Flex, IconButton } from "@chakra-ui/react"
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa"
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io"
 import { type ImagePayload } from "~/types/image-payload"
 import Image from "next/image"
 
@@ -100,14 +100,16 @@ const ImageCarousel = ({
       >
         <IconButton
           aria-label="Previous image"
-          icon={<FaArrowLeft />}
+          fontSize="24px"
+          icon={<IoIosArrowBack />}
           onClick={handlePrev}
           className="opacity-75 hover:opacity-100"
           rounded="full"
         />
         <IconButton
           aria-label="Next image"
-          icon={<FaArrowRight />}
+          fontSize="24px"
+          icon={<IoIosArrowForward />}
           onClick={handleNext}
           className="opacity-75 hover:opacity-100"
           rounded="full"
