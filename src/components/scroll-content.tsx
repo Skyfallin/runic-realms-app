@@ -10,7 +10,7 @@ const imageTextContents: Array<CarouselText> = [
     title: "Explore Alterra",
     text:
       "Enter the Realm of Alterra—a beautiful, " +
-      "hand-built 6k x 6k custom map! Adventure through the spindly Silkwood Forest, " +
+      "hand-built 6k x 6k custom adventure map! Fight your way through the spindly Silkwood Forest, " +
       "brave the cold of the viking village of Whaletown, " +
       "or discover the secrets of the once-great ruins of Dead Man's Rest!",
   },
@@ -18,21 +18,30 @@ const imageTextContents: Array<CarouselText> = [
     title: "Choose Your Class",
     text:
       "Choose from 5 classes, each with 3 subclass trees to master! " +
-      "Mix-and-match your spell points to customize your character to your playstyle! " +
+      "Combine spells from each subclass to customize your character and create your playstyle! " +
       "Will you guard your allies with the astral powers of the Starweaver, " +
       "or strike fear into your enemies as a Dreadlord?",
   },
   {
     title: "Experience the Story",
-    text: "",
+    text:
+      "Unravel the mysteries of the realm! Join Theia Ark and her Redbrand forces " +
+      "against the tyranny of Azana! Rally the High Mages of Wintervale " +
+      "and investigate a sinister, otherwordly force that threatens the kingdoms " +
+      "of Alterra!",
   },
   {
-    title: "Battle Bosses",
-    text: "",
+    title: "Earn Your Loot",
+    text:
+      "Venture into dark caverns or ancient fortresses to " +
+      "level-up and gain powerful weapons and armor!",
   },
   {
     title: "Hone Your Craft",
-    text: "",
+    text:
+      "Train your gathering skills like fishing and herbalism by collecting reagents in the world, then " +
+      "master one of three crafting specializations: Alchemist, Blacksmith, or Jeweler! " +
+      "Combine your crafting reagents to create powerful items to aid you in battle!",
   },
 ]
 
