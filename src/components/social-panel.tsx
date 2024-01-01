@@ -48,6 +48,7 @@ const SocialPanel = () => {
         <IconButton
           aria-label="Reddit Icon"
           icon={payload.icon}
+          key={payload.label}
           onClick={() => handleClick(payload.url)}
           variant="ghost"
           fontSize="40px"
