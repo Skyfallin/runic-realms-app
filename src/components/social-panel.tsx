@@ -1,11 +1,17 @@
 import { Box, IconButton } from "@chakra-ui/react"
-import { FaReddit, FaTwitter, FaYoutube } from "react-icons/fa"
+import { FaDiscord, FaRedditAlien, FaTwitter, FaYoutube } from "react-icons/fa"
 import { type ButtonPayload } from "~/types/button-payload"
 
 const iconArray: Array<ButtonPayload> = [
   {
+    label: "#5865f2",
+    icon: <FaDiscord />,
+    url: "https://discord.gg/5FjVVd4",
+    type: "external",
+  },
+  {
     label: "#FF4500",
-    icon: <FaReddit />,
+    icon: <FaRedditAlien />,
     url: "https://www.reddit.com/r/RunicRealms/",
     type: "external",
   },
