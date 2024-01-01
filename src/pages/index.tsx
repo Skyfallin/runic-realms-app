@@ -8,6 +8,26 @@ import { SocialPanel } from "~/components/social-panel"
 
 const Home = () => {
   const [activeIndex, setActiveIndex] = React.useState(0)
+  const [showSocialPanel, setShowSocialPanel] = React.useState(false)
+
+  React.useEffect(() => {
+    const checkScroll = () => {
+      const yPos = window.scrollY
+      const triggerHeight = 700 // TODO: constant
+
+      if (yPos > triggerHeight) {
+        setShowSocialPanel(true)
+      } else {
+        setShowSocialPanel(false)
+      }
+    }
+
+    window.addEventListener("scroll", checkScroll)
+
+    return () => {
+      window.removeEventListener("scroll", checkScroll)
+    }
+  }, [])
 
   return (
     <>
@@ -28,16 +48,7 @@ const Home = () => {
         </section>
         <section className="scrolling-content">
           <ScrollContent />
-          {/* <Box
-            background="red"
-            my="auto"
-            position="absolute"
-            bottom={0}
-            height="50px"
-            width={50}
-          > */}
-          <SocialPanel />
-          {/* </Box> */}
+          {showSocialPanel && <SocialPanel />}
         </section>
       </main>
     </>
