@@ -1,33 +1,14 @@
-import { Box } from "@chakra-ui/react"
+import { Box, Flex } from "@chakra-ui/react"
 import Head from "next/head"
 import React from "react"
 import LogoContent from "~/components/logo-content"
 import { Navigation } from "~/components/navigation"
 import { ScrollContent } from "~/components/scroll-content"
 import { SocialPanel } from "~/components/social-panel"
+import { Background } from "~/components/background"
 
 const Home = () => {
   const [activeIndex, setActiveIndex] = React.useState(0)
-  const [showSocialPanel, setShowSocialPanel] = React.useState(false)
-
-  React.useEffect(() => {
-    const checkScroll = () => {
-      const yPos = window.scrollY
-      const triggerHeight = 700 // TODO: constant
-
-      if (yPos > triggerHeight) {
-        setShowSocialPanel(true)
-      } else {
-        setShowSocialPanel(false)
-      }
-    }
-
-    window.addEventListener("scroll", checkScroll)
-
-    return () => {
-      window.removeEventListener("scroll", checkScroll)
-    }
-  }, [])
 
   return (
     <>
@@ -40,20 +21,23 @@ const Home = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="background">
-        <section className="initial-view">
-          <Box className="logo-content-container fade-in">
-            <LogoContent />
-          </Box>
-          <Navigation
-            activeIndex={activeIndex}
-            setActiveIndex={setActiveIndex}
-          />
-        </section>
-        <section className="scrolling-content">
-          <ScrollContent />
-          {showSocialPanel && <SocialPanel />}
-        </section>
+      <main>
+        <Flex flexDirection="column">
+          <section className="top-container">
+            <Background />
+            <Box className="fade-in" gridRow={1} gridColumn={2} zIndex={10}>
+              <LogoContent />
+            </Box>
+            <Navigation
+              activeIndex={activeIndex}
+              setActiveIndex={setActiveIndex}
+            />
+          </section>
+          <section className="bottom-container">
+            <ScrollContent />
+            <SocialPanel />
+          </section>
+        </Flex>
       </main>
     </>
   )

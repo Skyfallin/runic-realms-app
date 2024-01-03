@@ -1,4 +1,4 @@
-import { Box, Button, IconButton, useToast } from "@chakra-ui/react"
+import { Box, Button, useToast } from "@chakra-ui/react"
 import Image from "next/image"
 import React from "react"
 import { PiSwordFill } from "react-icons/pi"
