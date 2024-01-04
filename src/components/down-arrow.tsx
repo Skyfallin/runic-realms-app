@@ -19,8 +19,9 @@ const DownArrow = () => {
       height={50}
       w={50}
       left="50%"
+      opacity={0}
       sx={{
-        animation: `bounce 1.25s ease-in-out infinite`,
+        animation: `fadeInAnimation 1s ease 2s forwards, bounce 1.25s ease-in-out infinite 2s`,
       }}
       css={bounceAnimation}
       zIndex={200000}
