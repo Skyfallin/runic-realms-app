@@ -2,6 +2,7 @@ import { Box, Flex } from "@chakra-ui/react"
 import Head from "next/head"
 import React from "react"
 import { Background } from "~/components/background"
+import { DownArrow } from "~/components/down-arrow"
 import LogoContent from "~/components/logo-content"
 import { Navigation } from "~/components/navigation"
 import { ScrollContent } from "~/components/scroll-content"
@@ -22,6 +23,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <DownArrow />
         <Flex flexDirection="column">
           <section className="top-container">
             <Background />
