@@ -1,6 +1,10 @@
-import { Box, IconButton } from "@chakra-ui/react"
+import { IconButton } from "@chakra-ui/react"
 import { FaDiscord, FaRedditAlien, FaTwitter, FaYoutube } from "react-icons/fa"
 import { type ButtonPayload } from "~/types/button-payload"
+
+interface SocialPanelProps {
+  fontSize: string
+}
 
 const iconArray: Array<ButtonPayload> = [
   {
@@ -33,17 +37,9 @@ const handleClick = (url: string) => {
   window.location.href = url
 }
 
-const SocialPanel = () => {
+const SocialPanel = ({ fontSize }: SocialPanelProps) => {
   return (
-    <Box
-      display="flex"
-      flexDirection="column"
-      gap="4"
-      position="fixed"
-      bottom="50%"
-      left="2"
-      zIndex={1}
-    >
+    <>
       {iconArray.map((payload) => (
         <IconButton
           aria-label="Reddit Icon"
@@ -51,7 +47,7 @@ const SocialPanel = () => {
           key={payload.label}
           onClick={() => handleClick(payload.url)}
           variant="ghost"
-          fontSize="40px"
+          fontSize={fontSize}
           color="#312509"
           size="lg"
           _hover={{
@@ -60,7 +56,7 @@ const SocialPanel = () => {
           }}
         />
       ))}
-    </Box>
+    </>
   )
 }
 

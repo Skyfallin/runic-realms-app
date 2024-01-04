@@ -15,7 +15,6 @@ const StoreIcons = () => {
         className="shadow-large"
         height={500}
         width={500}
-        layout="responsive"
       />
       <Image
         src="/store/hero.svg"
@@ -23,7 +22,6 @@ const StoreIcons = () => {
         className="shadow-large"
         height={500}
         width={500}
-        layout="responsive"
       />
       <Image
         src="/store/champion.svg"
@@ -31,7 +29,6 @@ const StoreIcons = () => {
         className="shadow-large"
         height={500}
         width={500}
-        layout="responsive"
       />
     </Box>
   )

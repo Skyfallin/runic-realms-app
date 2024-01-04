@@ -6,13 +6,20 @@ const Background = () => {
     <Box className="background-container">
       <Image
         src="/background-full.svg"
-        alt="MMORPG Server Site Background"
+        alt="Site Background"
         priority={true}
-        layout="fill"
+        fill
         objectFit="cover"
         objectPosition="center"
       />
-      <Box className="transition-image"></Box>
+      <Image
+        src="/transition-paper-light.svg"
+        alt="Background Transition Image"
+        priority={true}
+        height={500}
+        width={2912}
+        className="transition-image"
+      />
     </Box>
   )
 }
