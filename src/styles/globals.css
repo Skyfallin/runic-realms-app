@@ -20,26 +20,21 @@ body {
   position: sticky;
   grid-area: 1 / 1 / -1 / -1;
   z-index: 2;
+  overflow: hidden;
 }
 
 .transition-image {
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin-top: 40px;
-  top: 100;
-  /* top: 100; */
-  /* height: 27.5%; */
-  /* background: url("/transition-paper-light.svg"); */
+  bottom: -8rem;
   z-index: 2;
+  transform: scale(1.1);
 }
 
 .left-social-panel {
   display: flex;
   flex-direction: column;
   position: fixed;
-  z-index: 1;
+  z-index: -100;
 }
 
 .bottom-container {
@@ -52,6 +47,7 @@ body {
     #e0e0e0 50%,
     #f8ecd1 100%
   );
+  z-index: 3;
 }
 
 .fade-in {

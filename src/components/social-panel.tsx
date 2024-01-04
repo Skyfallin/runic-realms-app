@@ -42,7 +42,7 @@ const SocialPanel = ({ fontSize }: SocialPanelProps) => {
     <>
       {iconArray.map((payload) => (
         <IconButton
-          aria-label="Reddit Icon"
+          aria-label="Social Media Icon"
           icon={payload.icon}
           key={payload.label}
           onClick={() => handleClick(payload.url)}

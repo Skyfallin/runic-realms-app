@@ -17,7 +17,7 @@ const Background = () => {
         alt="Background Transition Image"
         priority={true}
         height={500}
-        width={2912}
+        width={3200}
         className="transition-image"
       />
     </Box>

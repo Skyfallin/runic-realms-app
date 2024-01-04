@@ -35,16 +35,16 @@ const Home = () => {
           </section>
           <section className="bottom-container">
             <ScrollContent />
-            <Box className="left-social-panel" gap={4} bottom="50%" mx={2}>
+            {/* <Box className="left-social-panel" gap={4} bottom="50%" mx={2}>
               <SocialPanel fontSize="40px" />
-            </Box>
+            </Box> */}
             <Flex
               gridRow={5}
               gridColumn={4}
               justifyContent="center"
               alignItems="center"
             >
-              <SocialPanel fontSize={"24px"} />
+              <SocialPanel fontSize={"32px"} />
             </Flex>
           </section>
         </Flex>
