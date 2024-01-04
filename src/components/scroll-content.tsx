@@ -1,11 +1,10 @@
-import { Box, Button, Flex, Text } from "@chakra-ui/react"
-import { StoreIcons } from "./store-icons"
-import ImageCarousel from "./image-carousel"
-import { SocialPanel } from "./social-panel"
+import { Box, Button, Text } from "@chakra-ui/react"
 import React from "react"
-import { type CarouselText } from "~/types/carousel-text"
 import { FaCoins } from "react-icons/fa"
-
+import { type CarouselText } from "~/types/carousel-text"
+import ImageCarousel from "./image-carousel"
+import { StoreIcons } from "./store-icons"
+ 
 const imageTextContents: Array<CarouselText> = [
   {
     title: "Explore Alterra",
@@ -216,3 +215,4 @@ const ScrollContent = () => {
 }
 
 export { ScrollContent }
+
