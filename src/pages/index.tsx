@@ -25,7 +25,7 @@ const Home = () => {
         <Flex flexDirection="column">
           <section className="top-container">
             <Background />
-            <Box className="fade-in" gridRow={1} gridColumn={2} zIndex={10}>
+            <Box gridRow={1} gridColumn={2} zIndex={10}>
               <LogoContent />
             </Box>
             <Navigation
@@ -35,9 +35,6 @@ const Home = () => {
           </section>
           <section className="bottom-container">
             <ScrollContent />
-            {/* <Box className="left-social-panel" gap={4} bottom="50%" mx={2}>
-              <SocialPanel fontSize="40px" />
-            </Box> */}
             <Flex
               gridRow={5}
               gridColumn={4}

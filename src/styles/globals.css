@@ -17,7 +17,7 @@ body {
 }
 
 .background-container {
-  position: sticky;
+  position: relative;
   grid-area: 1 / 1 / -1 / -1;
   z-index: 2;
   overflow: hidden;
