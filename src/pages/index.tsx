@@ -38,11 +38,14 @@ const Home = () => {
             <Box className="left-social-panel" gap={4} bottom="50%" mx={2}>
               <SocialPanel fontSize="40px" />
             </Box>
-            <Box gridRow={5} gridColumn={4} mx={2}>
-              <Flex flexWrap="nowrap" justifyContent="center">
-                <SocialPanel fontSize={"30px"} />
-              </Flex>
-            </Box>
+            <Flex
+              gridRow={5}
+              gridColumn={4}
+              justifyContent="center"
+              alignItems="center"
+            >
+              <SocialPanel fontSize={"24px"} />
+            </Flex>
           </section>
         </Flex>
       </main>
