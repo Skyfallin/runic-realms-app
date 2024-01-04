@@ -55,7 +55,7 @@ const Navigation: React.FC<Readonly<RunicNavigationProps>> = ({
   }
 
   return (
-    <Box className="navbar fade-in fade-in-delayed">
+    <Box className="navbar fade-in fade-in-delayed-1">
       <ButtonGroup spacing="1rem" className="drop-shadow-2xl">
         {buttons.map((payload, index) => (
           <Button

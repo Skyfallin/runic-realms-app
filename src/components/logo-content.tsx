@@ -71,7 +71,7 @@ const LogoContent = () => {
         size="2xl"
         mt={2}
         whiteSpace="nowrap"
-        className="swipe-in"
+        className="fade-in fade-in-delayed-1"
       >
         Minecraft's Magic MMO
       </Heading>
