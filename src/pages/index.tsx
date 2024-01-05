@@ -1,5 +1,4 @@
 import { Box, Flex } from "@chakra-ui/react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
 import Head from "next/head"
 import React from "react"
 import { Background } from "~/components/background"
@@ -24,7 +23,6 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <SpeedInsights />
         <DownArrow />
         <Flex flexDirection="column">
           <section className="top-container">
