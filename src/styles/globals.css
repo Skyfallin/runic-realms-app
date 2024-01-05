@@ -135,6 +135,31 @@ body {
   box-shadow: inset 5px 5px 9px 26px #000000;
 }
 
+.highlight-button-cam {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    135deg,
+    #2592a7 20%,
+    #1f7a8c 20%,
+    #1f7a8c 80%,
+    #2592a7 80%
+  ) !important;
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  color: white;
+  color: white !important;
+  font-weight: bold;
+  transition:
+    background-position 0.5s,
+    color 0.5s;
+}
+
+.highlight-button-cam:hover {
+  background-image: linear-gradient(to right, white 50%, white 50%) !important;
+}
+
 .highlight-button {
   padding: 10px 20px;
   border: none;

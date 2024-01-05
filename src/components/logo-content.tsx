@@ -35,14 +35,13 @@ const LogoContent = () => {
       alignItems="center"
       justifyContent="center"
       h="100%"
-      gap={2}
+      gap={4}
     >
       <Flex
         className="fade-in"
         flexDirection="column"
         justifyContent="center"
         alignItems="center"
-        gap={2}
       >
         <Image
           src="/runic-realms-logo.svg"
@@ -51,30 +50,32 @@ const LogoContent = () => {
           height={500}
           priority={true}
         />
-        <Button
-          className="button box-shadow zoom-on-hover"
-          color="white"
-          onClick={() => handleClick()}
-          w={[50, 100, 150]}
-          size="lg"
+        <Heading
+          as="h1"
+          fontStyle="italic"
+          fontFamily="'IM Fell English', serif"
+          size="2xl"
+          mt={2}
+          whiteSpace="nowrap"
+          className="fade-in fade-in-delayed-1"
         >
-          <Box display="flex" alignItems="center" gap="2" whiteSpace="nowrap">
-            <PiSwordFill />
-            PLAY NOW
-          </Box>
-        </Button>
+          Minecraft's Magic MMO
+        </Heading>
       </Flex>
-      <Heading
-        as="h1"
-        fontStyle="italic"
-        fontFamily="'IM Fell English', serif"
-        size="2xl"
-        mt={2}
-        whiteSpace="nowrap"
-        className="fade-in fade-in-delayed-1"
+      <Button
+        className="button highlight-button-cam box-shadow zoom-on-hover"
+        color="white"
+        onClick={() => handleClick()}
+        // h={[30, 40, 72]}
+        w={[50, 100, 188]}
+        // rounded="full"
+        size="lg"
       >
-        Minecraft's Magic MMO
-      </Heading>
+        <Box display="flex" alignItems="center" gap="2" whiteSpace="nowrap">
+          <PiSwordFill />
+          PLAY NOW
+        </Box>
+      </Button>
     </Flex>
   )
 }
