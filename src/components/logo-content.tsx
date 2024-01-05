@@ -1,10 +1,12 @@
 import { Box, Button, Flex, Heading, useToast } from "@chakra-ui/react"
 import Image from "next/image"
+import React from "react"
 import { PiSwordFill } from "react-icons/pi"
 
 const ip = "play.runicrealms.com"
 
 const LogoContent = () => {
+  const [hover, setHover] = React.useState(false)
   const toast = useToast()
 
   const showToast = () => {
@@ -66,14 +68,14 @@ const LogoContent = () => {
         className="button highlight-button-cam box-shadow zoom-on-hover"
         color="white"
         onClick={() => handleClick()}
-        // h={[30, 40, 72]}
         w={[50, 100, 188]}
-        // rounded="full"
         size="lg"
+        onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}
       >
         <Box display="flex" alignItems="center" gap="2" whiteSpace="nowrap">
           <PiSwordFill />
-          PLAY NOW
+          {hover ? "COPY IP" : "PLAY NOW"}
         </Box>
       </Button>
     </Flex>
