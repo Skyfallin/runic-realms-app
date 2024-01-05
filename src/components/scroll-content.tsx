@@ -4,7 +4,7 @@ import { FaCoins } from "react-icons/fa"
 import { type CarouselText } from "~/types/carousel-text"
 import ImageCarousel from "./image-carousel"
 import { StoreIcons } from "./store-icons"
- 
+
 const imageTextContents: Array<CarouselText> = [
   {
     title: "Explore Alterra",
@@ -207,6 +207,9 @@ const ScrollContent = () => {
       <Box gridRow={4} gridColumn={3} mx="auto" my="auto">
         <StoreIcons />
       </Box>
+      <Box gridRow={5} gridColumn={2} mx="auto" my="auto">
+        <Text>JOIN NOW at play.runicrealms.com</Text>
+      </Box>
       <Box gridRow={5} gridColumn={3} mx="auto" my="auto">
         <Text>Copyright Runic Realms © 2018-2024</Text>
       </Box>
@@ -215,4 +218,3 @@ const ScrollContent = () => {
 }
 
 export { ScrollContent }
-

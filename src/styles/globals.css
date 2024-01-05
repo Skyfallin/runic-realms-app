@@ -6,7 +6,7 @@
 
 body {
   font-family: "Lora", serif !important;
-  color: #312509 !important; /* Replace with your desired font color */
+  color: #312509 !important;
 }
 
 .top-container {
@@ -148,7 +148,6 @@ body {
   ) !important;
   background-size: 200% 100%;
   background-position: 100% 0;
-  color: white;
   color: white !important;
   font-weight: bold;
   transition:
@@ -158,6 +157,7 @@ body {
 
 .highlight-button-cam:hover {
   background-image: linear-gradient(to right, white 50%, white 50%) !important;
+  color: #312509 !important;
 }
 
 .highlight-button {
