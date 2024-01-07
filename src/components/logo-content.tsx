@@ -39,12 +39,7 @@ const LogoContent = () => {
       h="100%"
       gap={4}
     >
-      <Flex
-        className="fade-in"
-        flexDirection="column"
-        justifyContent="center"
-        alignItems="center"
-      >
+      <Flex flexDirection="column" justifyContent="center" alignItems="center">
         <Image
           src="/runic-realms-logo.svg"
           alt="Runic Realms Logo"
@@ -59,7 +54,6 @@ const LogoContent = () => {
           size="2xl"
           mt={2}
           whiteSpace="nowrap"
-          className="fade-in fade-in-delayed-1"
         >
           Minecraft's Magic MMO
         </Heading>

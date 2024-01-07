@@ -50,16 +50,6 @@ body {
   z-index: 3;
 }
 
-.fade-in {
-  opacity: 0;
-  animation: fadeInAnimation ease-in 1s;
-  animation-fill-mode: forwards; /* This keeps the element visible after the animation completes */
-}
-
-.fade-in-delayed-1 {
-  animation-delay: 1s; /* Starts the animation after a delay */
-}
-
 @keyframes fadeInAnimation {
   from {
     opacity: 0;
