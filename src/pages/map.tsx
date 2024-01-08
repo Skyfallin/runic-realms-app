@@ -8,7 +8,7 @@ const MapPage = () => {
       <BlurBar />
       <Navigation />
       <iframe
-        src="/map/index.html" // Nginx serves the 'overviewer' directory at the '/map' path
+        src="/overviewer/index.html"
         style={{ width: "100%", height: "100vh", border: "none" }}
         title="Minecraft Map - Alterra"
       />
