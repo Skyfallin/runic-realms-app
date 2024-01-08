@@ -1,7 +1,6 @@
 import { Box, Flex } from "@chakra-ui/react"
 import Head from "next/head"
 import { Background } from "~/components/background"
-import BlurBar from "~/components/blur-bar"
 import { DownArrow } from "~/components/down-arrow"
 import LogoContent from "~/components/logo-content"
 import { Navigation } from "~/components/navigation"
@@ -28,7 +27,6 @@ const Home = () => {
             <Box gridRow={1} gridColumn={2} zIndex={10}>
               <LogoContent />
             </Box>
-            <BlurBar />
             <Navigation />
           </section>
           <section className="bottom-container">

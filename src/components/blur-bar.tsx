@@ -1,5 +1,6 @@
 import { Flex } from "@chakra-ui/react"
 import Image from "next/image"
+import Link from "next/link"
 
 const BlurBar = () => {
   return (
@@ -11,19 +12,22 @@ const BlurBar = () => {
       alignItems="center"
       justifyContent="center"
     >
-      <Image
-        src="/runic-realms-logo.svg"
-        alt="Runic Realms Logo"
-        width={2800}
-        height={500}
-        style={{
-          maxWidth: "30%",
-          maxHeight: "75%",
-          position: "absolute",
-          left: "4.5rem",
-        }}
-        priority={true}
-      />
+      <Link href="/" passHref>
+        <Image
+          src="/runic-realms-logo.svg"
+          alt="Runic Realms Logo"
+          width={2800}
+          height={500}
+          style={{
+            maxWidth: "30%",
+            maxHeight: "75%",
+            position: "absolute",
+            left: "4.5rem",
+            bottom: "0.5rem",
+          }}
+          priority={true}
+        />
+      </Link>
     </Flex>
   )
 }
