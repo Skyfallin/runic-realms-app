@@ -1,5 +1,6 @@
 import { Box } from "@chakra-ui/react"
 import Image from "next/image"
+import { backgroundBase64 } from "./static/image-constants"
 
 const Background = () => {
   return (
@@ -11,6 +12,8 @@ const Background = () => {
         fill
         objectFit="cover"
         objectPosition="center"
+        placeholder="blur"
+        blurDataURL={backgroundBase64}
       />
       <Image
         src="/transition-paper-light.svg"
