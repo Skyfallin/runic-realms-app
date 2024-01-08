@@ -4,17 +4,11 @@ import { FaBullhorn, FaCoins, FaHome, FaMap } from "react-icons/fa"
 import { MdForum } from "react-icons/md"
 import { type ButtonPayload } from "~/types/button-payload"
 
-type RunicNavigationProps = {
-  activeIndex: number
-}
-
-const Navigation: React.FC<Readonly<RunicNavigationProps>> = ({
-  activeIndex,
-}) => {
+const Navigation = () => {
   const router = useRouter()
 
   const buttons: Array<ButtonPayload> = [
-    { label: "Home", icon: <FaHome />, type: "internal", url: "" },
+    { label: "Home", icon: <FaHome />, type: "internal", url: "/" },
     {
       label: "News",
       icon: <FaBullhorn />,
