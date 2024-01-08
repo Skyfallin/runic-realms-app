@@ -27,7 +27,7 @@ const Home = () => {
             <Box gridRow={1} gridColumn={2} zIndex={10}>
               <LogoContent />
             </Box>
-            <Navigation activeIndex={0} />
+            <Navigation />
           </section>
           <section className="bottom-container">
             <ScrollContent />
