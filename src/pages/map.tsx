@@ -1,16 +1,16 @@
-// pages/map.js
+import { Box } from "@chakra-ui/react"
+import { Navigation } from "~/components/navigation"
+
 const MapPage = () => {
   return (
-    // <iframe
-    //   src="/overviewer/index.html" // The path to your 'overviewer' main file
-    //   style={{ width: "100%", height: "100vh", border: "none" }}
-    //   title="Map"
-    // />
-    <iframe
-      src="/map/index.html" // Assuming Nginx serves the 'overviewer' directory at the '/map' path
-      style={{ width: "100%", height: "100vh", border: "none" }}
-      title="Minecraft Map - Alterra"
-    />
+    <Box position="relative">
+      <Navigation activeIndex={1} />
+      <iframe
+        src="/map/index.html" // Nginx serves the 'overviewer' directory at the '/map' path
+        style={{ width: "100%", height: "100vh", border: "none" }}
+        title="Minecraft Map - Alterra"
+      />
+    </Box>
   )
 }
 

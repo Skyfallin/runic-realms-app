@@ -6,12 +6,10 @@ import { type ButtonPayload } from "~/types/button-payload"
 
 type RunicNavigationProps = {
   activeIndex: number
-  setActiveIndex: (index: number) => void
 }
 
 const Navigation: React.FC<Readonly<RunicNavigationProps>> = ({
   activeIndex,
-  setActiveIndex,
 }) => {
   const router = useRouter()
 
@@ -38,15 +36,14 @@ const Navigation: React.FC<Readonly<RunicNavigationProps>> = ({
     },
   ]
 
-  const determineClassName = (label: string, index: number): string => {
+  const determineClassName = (label: string): string => {
     if (label === "Store") {
       return "highlight-button box-shadow"
     }
     return "outline-button"
   }
 
-  const handleClick = async (payload: ButtonPayload, index: number) => {
-    setActiveIndex(index)
+  const handleClick = async (payload: ButtonPayload) => {
     if (payload.type === "external") {
       window.location.href = payload.url
     } else {
@@ -57,12 +54,12 @@ const Navigation: React.FC<Readonly<RunicNavigationProps>> = ({
   return (
     <Box className="navbar">
       <ButtonGroup spacing="1rem" className="drop-shadow-2xl">
-        {buttons.map((payload, index) => (
+        {buttons.map((payload) => (
           <Button
-            className={determineClassName(payload.label, index)}
+            className={determineClassName(payload.label)}
             color="white"
             key={payload.label}
-            onClick={() => handleClick(payload, index)}
+            onClick={() => handleClick(payload)}
             width={[48, 96, 144]}
             variant={"ghost"}
           >

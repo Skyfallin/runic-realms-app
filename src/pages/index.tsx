@@ -1,6 +1,5 @@
 import { Box, Flex } from "@chakra-ui/react"
 import Head from "next/head"
-import React from "react"
 import { Background } from "~/components/background"
 import { DownArrow } from "~/components/down-arrow"
 import LogoContent from "~/components/logo-content"
@@ -9,8 +8,6 @@ import { ScrollContent } from "~/components/scroll-content"
 import { SocialPanel } from "~/components/social-panel"
 
 const Home = () => {
-  const [activeIndex, setActiveIndex] = React.useState(0)
-
   return (
     <>
       <Head>
@@ -30,10 +27,7 @@ const Home = () => {
             <Box gridRow={1} gridColumn={2} zIndex={10}>
               <LogoContent />
             </Box>
-            <Navigation
-              activeIndex={activeIndex}
-              setActiveIndex={setActiveIndex}
-            />
+            <Navigation activeIndex={0} />
           </section>
           <section className="bottom-container">
             <ScrollContent />
