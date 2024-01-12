@@ -3,6 +3,7 @@ import Head from "next/head"
 import { Background } from "~/components/background"
 import { DownArrow } from "~/components/down-arrow"
 import LogoContent from "~/components/logo-content"
+import HamburgerMenu from "~/components/mobile/hamburger-menu"
 import { Navigation } from "~/components/navigation"
 import { ScrollContent } from "~/components/scroll-content"
 import { SocialPanel } from "~/components/social-panel"
@@ -28,6 +29,7 @@ const Home = () => {
               <LogoContent />
             </Box>
             <Navigation />
+            <HamburgerMenu />
           </section>
           <section className="bottom-container">
             <ScrollContent />

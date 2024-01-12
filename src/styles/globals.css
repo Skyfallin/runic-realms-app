@@ -208,6 +208,15 @@ body {
   z-index: 9999; /* This value should be higher than that of .background::after */
 }
 
+.hamburger-menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 1rem;
+  z-index: 9999; /* This value should be higher than that of .background::after */
+  display: none;
+}
+
 .social-panel {
   grid-row: 5;
   grid-column: 4;
@@ -302,6 +311,11 @@ body {
   .hide-on-mobile {
     /* To hide certain elements */
     display: none;
+  }
+
+  /* To show certain elements */
+  .only-on-mobile {
+    display: block;
   }
 
   .background-container::after {
