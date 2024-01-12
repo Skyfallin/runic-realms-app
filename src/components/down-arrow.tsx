@@ -25,6 +25,7 @@ const DownArrow = () => {
       }}
       css={bounceAnimation}
       zIndex={200000}
+      className="hide-on-mobile"
     >
       <FaArrowDown size={arrowSize} />
     </Box>

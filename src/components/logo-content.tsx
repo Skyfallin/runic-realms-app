@@ -62,7 +62,7 @@ const LogoContent = () => {
         className="button highlight-button-cam box-shadow zoom-on-hover"
         color="white"
         onClick={() => handleClick()}
-        w={[50, 100, 188]}
+        w={188}
         size="lg"
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}

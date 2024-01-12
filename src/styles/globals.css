@@ -293,6 +293,10 @@ body {
   font-size: var(--chakra-fontSizes-6xl);
 }
 
+.logo-subtitle {
+  font-size: var(--chakra-fontSizes-2xl);
+}
+
 /* Media query for mobile screens */
 @media (max-width: 768px) {
   .hide-on-mobile {
