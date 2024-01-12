@@ -56,32 +56,20 @@ const ScrollContent = () => {
 
   return (
     <>
-      <Box
-        gridRow={1}
-        gridColumn={2}
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-      >
+      <Box className="carousel-container">
         <ImageCarousel
           currentImage={currentImage}
           setCurrentImage={setCurrentImage}
         />
       </Box>
-      <Box
-        gridRow={1}
-        gridColumn={3}
-        display="flex"
-        flexDirection="column"
-        justifyContent="center"
-        alignItems="center"
-      >
+      <Box className="carousel-text-container">
         <Text
           fontSize="6xl"
           fontWeight="bold"
           fontFamily="'IM Fell English', serif"
           textAlign="center"
           as="i"
+          className="hide-on-mobile"
         >
           {imageTextContents[currentImage]?.title}
         </Text>
@@ -89,14 +77,7 @@ const ScrollContent = () => {
           {imageTextContents[currentImage]?.text}
         </Text>
       </Box>
-      <Box
-        gridRow={2}
-        gridColumn={2}
-        display="flex"
-        flexDirection="column"
-        justifyContent="center"
-        alignItems="center"
-      >
+      <Box className="take-up-arms-container">
         <Text
           fontSize="6xl"
           fontWeight="bold"
@@ -106,7 +87,7 @@ const ScrollContent = () => {
         >
           Take Up Arms
         </Text>
-        <Text fontSize="lg" maxW="75%">
+        <Text fontSize="lg" maxW="75%" className="hide-on-mobile">
           The Realm of Alterra features{" "}
           <span className="font-bold">six unique</span> and challenging
           <span className="font-bold"> dungeons</span>, presenting increasingly
@@ -114,7 +95,7 @@ const ScrollContent = () => {
           in battle!
         </Text>
       </Box>
-      <Box gridRow={2} gridColumn={3} width="90%" mx="auto" my="auto">
+      <Box className="dungeon-bossfight-container" mx="auto" my="auto">
         <video
           controls={false}
           autoPlay
@@ -130,7 +111,7 @@ const ScrollContent = () => {
         </video>
       </Box>
 
-      <Box gridRow={3} gridColumn={2} width="90%" mx="auto" my="auto">
+      <Box className="profession-tent-container" mx="auto" my="auto">
         <video
           controls={false}
           autoPlay
@@ -145,14 +126,7 @@ const ScrollContent = () => {
           Your browser does not support the video tag.
         </video>
       </Box>
-      <Box
-        gridRow={3}
-        gridColumn={3}
-        display="flex"
-        flexDirection="column"
-        justifyContent="center"
-        alignItems="center"
-      >
+      <Box className="adventure-together-container">
         <Text
           fontSize="6xl"
           fontWeight="bold"
@@ -162,21 +136,14 @@ const ScrollContent = () => {
         >
           Adventure Together
         </Text>
-        <Text fontSize="lg" maxW="75%">
+        <Text fontSize="lg" maxW="75%" className="hide-on-mobile">
           Play alone or with friends! Runic Realms is designed for both solo
           players and groups! Call your allies, hone your{" "}
           <span className="font-bold">tradeskills</span>, and become your own
           fellowship by forming a <span className="font-bold">Guild</span>!
         </Text>
       </Box>
-      <Box
-        display="flex"
-        gridRow={4}
-        gridColumn={2}
-        flexDirection="column"
-        justifyContent="center"
-        alignItems="center"
-      >
+      <Box className="support-server-container">
         <Text
           fontSize="6xl"
           fontWeight="bold"
@@ -204,13 +171,19 @@ const ScrollContent = () => {
           </Box>
         </Button>
       </Box>
-      <Box gridRow={4} gridColumn={3} mx="auto" my="auto">
+      <Box className="store-icons-container" mx="auto" my="auto">
         <StoreIcons />
       </Box>
-      <Box gridRow={5} gridColumn={2} mx="auto" my="auto">
+      <Box
+        className="hide-on-mobile"
+        gridRow={5}
+        gridColumn={2}
+        mx="auto"
+        my="auto"
+      >
         <Text>JOIN NOW at play.runicrealms.com</Text>
       </Box>
-      <Box gridRow={5} gridColumn={3} mx="auto" my="auto">
+      <Box className="copyright-container" mx="auto" my="auto">
         <Text>Copyright Runic Realms © 2018-2024</Text>
       </Box>
     </>

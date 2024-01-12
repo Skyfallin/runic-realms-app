@@ -208,14 +208,131 @@ body {
   z-index: 9999; /* This value should be higher than that of .background::after */
 }
 
-/* @media (max-width: 768px) {
-  .background {
-    background-image: url("/path/to/your-smaller-image.jpg");
-  }
+.social-panel {
+  grid-row: 5;
+  grid-column: 4;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (max-width: 480px) {
-  .background {
-    background-image: url("/path/to/your-smallest-image.jpg");
+.carousel-container {
+  grid-row: 1;
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-text-container {
+  grid-row: 1;
+  grid-column: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.take-up-arms-container {
+  grid-row: 2;
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dungeon-bossfight-container {
+  grid-row: 2;
+  grid-column: 3;
+  width: 90%;
+}
+
+.profession-tent-container {
+  grid-row: 3;
+  grid-column: 2;
+  width: 90%;
+}
+
+.adventure-together-container {
+  grid-row: 3;
+  grid-column: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.support-server-container {
+  grid-row: 4;
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.store-icons-container {
+  grid-row: 4;
+  grid-column: 3;
+}
+
+.copyright-container {
+  grid-row: 5;
+  grid-column: 3;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    /* To hide certain elements */
+    display: none;
   }
-} */
+
+  /* .top-container {
+    grid-template-columns: 1fr;
+  } */
+
+  .bottom-container {
+    grid-template-columns: 1fr; /* 1 column in mobile */
+  }
+
+  .social-panel {
+    grid-column: 1;
+  }
+
+  .carousel-container {
+    grid-column: 1;
+  }
+
+  .carousel-text-container {
+    grid-column: 1;
+  }
+
+  .take-up-arms-container {
+    grid-column: 1;
+  }
+
+  .dungeon-bossfight-container {
+    grid-column: 1;
+  }
+
+  .profession-tent-container {
+    grid-column: 1;
+  }
+
+  .adventure-together-container {
+    grid-column: 1;
+  }
+
+  .support-server-container {
+    grid-column: 1;
+  }
+
+  .store-icons-container {
+    grid-column: 1;
+  }
+
+  .copyright-container {
+    grid-column: 1;
+  }
+}

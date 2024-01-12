@@ -31,12 +31,7 @@ const Home = () => {
           </section>
           <section className="bottom-container">
             <ScrollContent />
-            <Flex
-              gridRow={5}
-              gridColumn={4}
-              justifyContent="center"
-              alignItems="center"
-            >
+            <Flex className="social-panel">
               <SocialPanel fontSize={"32px"} />
             </Flex>
           </section>
