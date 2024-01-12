@@ -1,12 +1,12 @@
-import { Flex } from "@chakra-ui/react"
+import { Box } from "@chakra-ui/react"
 import Image from "next/image"
 import Link from "next/link"
 
 const BlurBar = () => {
   return (
-    <Flex
+    <Box
       position="absolute"
-      className="left-0 right-0 top-0 bg-black/30 backdrop-blur-md"
+      className="hide-on-mobile left-0 right-0 top-0 bg-black/30 backdrop-blur-md"
       style={{ zIndex: 2 }}
       height="4.5rem"
       alignItems="center"
@@ -28,7 +28,7 @@ const BlurBar = () => {
           priority={true}
         />
       </Link>
-    </Flex>
+    </Box>
   )
 }
 

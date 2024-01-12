@@ -39,7 +39,7 @@ const HamburgerMenu = () => {
         className="z-10"
       >
         {/* Add your menu items here */}
-        <ChakraLink href="#">Menu Item 1</ChakraLink>
+        <ChakraLink href="/map">Menu Item 1</ChakraLink>
         <ChakraLink href="#">Menu Item 2</ChakraLink>
         <ChakraLink href="#">Menu Item 3</ChakraLink>
         {/* etc. */}
