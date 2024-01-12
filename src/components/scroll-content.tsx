@@ -64,29 +64,27 @@ const ScrollContent = () => {
       </Box>
       <Box className="explore-alterra-container">
         <Text
-          fontSize="6xl"
           fontWeight="bold"
           fontFamily="'IM Fell English', serif"
-          textAlign="center"
           as="i"
+          className="scroll-content-title"
         >
           {imageTextContents[currentImage]?.title}
         </Text>
-        <Text fontSize="lg" maxW="75%" className="hide-on-mobile">
+        <Text fontSize="lg" className="scroll-content-text">
           {imageTextContents[currentImage]?.text}
         </Text>
       </Box>
       <Box className="take-up-arms-container">
         <Text
-          fontSize="6xl"
           fontWeight="bold"
           fontFamily="'IM Fell English', serif"
-          textAlign="center"
           as="i"
+          className="scroll-content-title"
         >
           Take Up Arms
         </Text>
-        <Text fontSize="lg" maxW="75%" className="hide-on-mobile">
+        <Text fontSize="lg" className="scroll-content-text">
           The Realm of Alterra features{" "}
           <span className="font-bold">six unique</span> and challenging
           <span className="font-bold"> dungeons</span>, presenting increasingly
@@ -127,15 +125,14 @@ const ScrollContent = () => {
       </Box>
       <Box className="adventure-together-container">
         <Text
-          fontSize="6xl"
           fontWeight="bold"
           fontFamily="'IM Fell English', serif"
-          textAlign="center"
           as="i"
+          className="scroll-content-title"
         >
           Adventure Together
         </Text>
-        <Text fontSize="lg" maxW="75%" className="hide-on-mobile">
+        <Text fontSize="lg" className="scroll-content-text">
           Play alone or with friends! Runic Realms is designed for both solo
           players and groups! Call your allies, hone your{" "}
           <span className="font-bold">tradeskills</span>, and become your own
@@ -146,9 +143,8 @@ const ScrollContent = () => {
         <Text
           fontWeight="bold"
           fontFamily="'IM Fell English', serif"
-          textAlign="center"
           as="i"
-          className="support-server-text"
+          className="scroll-content-title"
         >
           Support the Server
         </Text>

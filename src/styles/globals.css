@@ -285,6 +285,14 @@ body {
   font-size: var(--chakra-fontSizes-6xl);
 }
 
+.scroll-content-text {
+  max-width: 75%;
+}
+
+.scroll-content-title {
+  font-size: var(--chakra-fontSizes-6xl);
+}
+
 /* Media query for mobile screens */
 @media (max-width: 768px) {
   .hide-on-mobile {
@@ -301,7 +309,16 @@ body {
     grid-template-rows:
       repeat(8, minmax(200px, auto))
       minmax(100px, auto);
-    /* margin-top: 200px; */
+    gap: 20px;
+  }
+
+  .scroll-content-text {
+    max-width: 100%;
+  }
+
+  .scroll-content-title {
+    font-size: var(--chakra-fontSizes-4xl);
+    justify-self: flex-start;
   }
 
   .carousel-container {

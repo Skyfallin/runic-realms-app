@@ -46,7 +46,7 @@ const Navigation = () => {
   }
 
   return (
-    <Box className="navbar">
+    <Box className="navbar hide-on-mobile">
       <ButtonGroup spacing="1rem" className="drop-shadow-2xl">
         {buttons.map((payload) => (
           <Button
