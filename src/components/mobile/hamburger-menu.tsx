@@ -39,9 +39,15 @@ const HamburgerMenu = () => {
         className="z-10"
       >
         {/* Add your menu items here */}
-        <ChakraLink href="/map">Menu Item 1</ChakraLink>
-        <ChakraLink href="#">Menu Item 2</ChakraLink>
-        <ChakraLink href="#">Menu Item 3</ChakraLink>
+        <ChakraLink href="/">Home</ChakraLink>
+        <ChakraLink href="https://www.runicrealms.com/forums/news/">
+          News
+        </ChakraLink>
+        <ChakraLink href="https://runicrealms.buycraft.net/">Store</ChakraLink>
+        <ChakraLink href="/map">Map</ChakraLink>
+        <ChakraLink href="https://www.runicrealms.com/forums/">
+          Forums
+        </ChakraLink>
         {/* etc. */}
       </VStack>
     </Box>
