@@ -304,9 +304,19 @@ body {
     display: none;
   }
 
-  /* .top-container {
-    grid-template-columns: 1fr;
-  } */
+  .background-container::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50%;
+    background: linear-gradient(
+      to bottom,
+      rgba(248, 236, 209, 0) 0%,
+      rgba(248, 236, 209, 1) 100%
+    );
+  }
 
   .bottom-container {
     grid-template-columns: 1fr; /* 1 column in mobile */
