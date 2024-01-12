@@ -62,18 +62,17 @@ const ScrollContent = () => {
           setCurrentImage={setCurrentImage}
         />
       </Box>
-      <Box className="carousel-text-container">
+      <Box className="explore-alterra-container">
         <Text
           fontSize="6xl"
           fontWeight="bold"
           fontFamily="'IM Fell English', serif"
           textAlign="center"
           as="i"
-          className="hide-on-mobile"
         >
           {imageTextContents[currentImage]?.title}
         </Text>
-        <Text fontSize="lg" maxW="75%">
+        <Text fontSize="lg" maxW="75%" className="hide-on-mobile">
           {imageTextContents[currentImage]?.text}
         </Text>
       </Box>
@@ -145,11 +144,11 @@ const ScrollContent = () => {
       </Box>
       <Box className="support-server-container">
         <Text
-          fontSize="6xl"
           fontWeight="bold"
           fontFamily="'IM Fell English', serif"
           textAlign="center"
           as="i"
+          className="support-server-text"
         >
           Support the Server
         </Text>
@@ -183,7 +182,7 @@ const ScrollContent = () => {
       >
         <Text>JOIN NOW at play.runicrealms.com</Text>
       </Box>
-      <Box className="copyright-container" mx="auto" my="auto">
+      <Box className="copyright-container hide-on-mobile" mx="auto" my="auto">
         <Text>Copyright Runic Realms © 2018-2024</Text>
       </Box>
     </>

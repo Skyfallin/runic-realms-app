@@ -223,7 +223,7 @@ body {
   align-items: center;
 }
 
-.carousel-text-container {
+.explore-alterra-container {
   grid-row: 1;
   grid-column: 3;
   display: flex;
@@ -281,6 +281,10 @@ body {
   grid-column: 3;
 }
 
+.support-server-text {
+  font-size: var(--chakra-fontSizes-6xl);
+}
+
 /* Media query for mobile screens */
 @media (max-width: 768px) {
   .hide-on-mobile {
@@ -294,45 +298,65 @@ body {
 
   .bottom-container {
     grid-template-columns: 1fr; /* 1 column in mobile */
-  }
-
-  .social-panel {
-    grid-column: 1;
+    grid-template-rows:
+      repeat(8, minmax(200px, auto))
+      minmax(100px, auto);
+    /* margin-top: 200px; */
   }
 
   .carousel-container {
     grid-column: 1;
   }
 
-  .carousel-text-container {
+  .explore-alterra-container {
     grid-column: 1;
-  }
-
-  .take-up-arms-container {
-    grid-column: 1;
+    grid-row: 2;
+    max-width: 80%;
+    margin: auto;
   }
 
   .dungeon-bossfight-container {
     grid-column: 1;
+    grid-row: 3;
+  }
+
+  .take-up-arms-container {
+    grid-column: 1;
+    grid-row: 4;
+    max-width: 80%;
+    margin: auto;
   }
 
   .profession-tent-container {
     grid-column: 1;
+    grid-row: 5;
   }
 
   .adventure-together-container {
     grid-column: 1;
-  }
-
-  .support-server-container {
-    grid-column: 1;
+    grid-row: 6;
+    max-width: 80%;
+    margin: auto;
   }
 
   .store-icons-container {
     grid-column: 1;
+    grid-row: 7;
   }
 
-  .copyright-container {
+  .support-server-container {
     grid-column: 1;
+    grid-row: 8;
+    max-width: 80%;
+    margin: auto;
+  }
+
+  .support-server-text {
+    font-size: var(--chakra-fontSizes-5xl);
+  }
+
+  .social-panel {
+    grid-column: 1;
+    grid-row: 9;
   }
 }
