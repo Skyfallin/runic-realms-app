@@ -422,6 +422,7 @@ body {
     grid-row: 8;
     max-width: 80%;
     margin: auto;
+    text-align: center;
   }
 
   .support-server-text {
