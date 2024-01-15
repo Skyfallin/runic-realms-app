@@ -71,7 +71,7 @@ const ScrollContent = () => {
         >
           {imageTextContents[currentImage]?.title}
         </Text>
-        <Text fontSize="lg" className="scroll-content-text" textAlign="center">
+        <Text fontSize="lg" className="scroll-content-text">
           {imageTextContents[currentImage]?.text}
         </Text>
       </Box>
@@ -84,7 +84,7 @@ const ScrollContent = () => {
         >
           Take Up Arms
         </Text>
-        <Text fontSize="lg" className="scroll-content-text" textAlign="center">
+        <Text fontSize="lg" className="scroll-content-text">
           The Realm of Alterra features{" "}
           <span className="font-bold">six unique</span> and challenging
           <span className="font-bold"> dungeons</span>, presenting increasingly

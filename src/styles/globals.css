@@ -239,6 +239,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: left;
 }
 
 .take-up-arms-container {
@@ -269,6 +270,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: left;
 }
 
 .support-server-container {
@@ -302,6 +304,16 @@ body {
   font-size: var(--chakra-fontSizes-6xl);
 }
 
+.logo-container {
+  grid-row: 1;
+  grid-column: 2;
+  z-index: 10;
+
+  h1 {
+    font-size: var(--chakra-fontSizes-5xl);
+  }
+}
+
 .logo-subtitle {
   font-size: var(--chakra-fontSizes-2xl);
 }
@@ -318,6 +330,10 @@ body {
     display: block;
   }
 
+  .top-container {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+  }
+
   .background-container::after {
     content: "";
     position: absolute;
@@ -332,8 +348,16 @@ body {
     );
   }
 
+  .logo-container {
+    grid-column: 1;
+
+    h1 {
+      font-size: var(--chakra-fontSizes-2xl);
+    }
+  }
+
   .bottom-container {
-    grid-template-columns: 1fr; /* 1 column in mobile */
+    grid-template-columns: 1fr; /* 1 column on mobile */
     grid-template-rows:
       repeat(7, minmax(200px, auto))
       minmax(100px, auto)
@@ -359,6 +383,7 @@ body {
     grid-row: 2;
     max-width: 80%;
     margin: auto;
+    text-align: center;
   }
 
   .dungeon-bossfight-container {
@@ -371,6 +396,7 @@ body {
     grid-row: 4;
     max-width: 80%;
     margin: auto;
+    text-align: center;
   }
 
   .profession-tent-container {

@@ -1,4 +1,4 @@
-import { Box, Flex } from "@chakra-ui/react"
+import { Flex } from "@chakra-ui/react"
 import Head from "next/head"
 import { Background } from "~/components/background"
 import { DownArrow } from "~/components/down-arrow"
@@ -25,9 +25,7 @@ const Home = () => {
         <Flex flexDirection="column">
           <section className="top-container">
             <Background />
-            <Box gridRow={1} gridColumn={2} zIndex={10}>
-              <LogoContent />
-            </Box>
+            <LogoContent />
             <Navigation />
             <HamburgerMenu />
           </section>

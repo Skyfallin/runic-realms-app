@@ -32,54 +32,53 @@ const LogoContent = () => {
   }
 
   return (
-    <Flex
-      background="red"
-      flexDirection="column"
-      alignItems="center"
-      justifyContent="center"
-      h="100%"
-      w="75%"
-      gap={4}
-    >
+    <Box className="logo-container">
       <Flex
-        background="green"
         flexDirection="column"
-        justifyContent="center"
         alignItems="center"
+        justifyContent="center"
+        h="100%"
+        gap={4}
+        textAlign="center"
       >
-        <Image
-          src="/runic-realms-logo.svg"
-          alt="Runic Realms Logo"
-          width={2800}
-          height={500}
-          priority={true}
-        />
-        <Heading
-          as="h1"
-          fontStyle="italic"
-          fontFamily="'IM Fell English', serif"
-          size="2xl"
-          mt={2}
-          whiteSpace="nowrap"
+        <Flex
+          flexDirection="column"
+          justifyContent="center"
+          alignItems="center"
         >
-          Minecraft's Magic MMO
-        </Heading>
+          <Image
+            src="/runic-realms-logo.svg"
+            alt="Runic Realms Logo"
+            width={2800}
+            height={500}
+            priority={true}
+          />
+          <Heading
+            as="h1"
+            fontStyle="italic"
+            fontFamily="'IM Fell English', serif"
+            mt={2}
+            whiteSpace="nowrap"
+          >
+            Minecraft's Magic MMO
+          </Heading>
+        </Flex>
+        <Button
+          className="button highlight-button-cam box-shadow zoom-on-hover"
+          color="white"
+          onClick={() => handleClick()}
+          w={[144, 188, 188]}
+          size="lg"
+          onMouseEnter={() => setHover(true)}
+          onMouseLeave={() => setHover(false)}
+        >
+          <Box display="flex" alignItems="center" gap="2" whiteSpace="nowrap">
+            <PiSwordFill />
+            {hover ? "COPY IP" : "PLAY NOW"}
+          </Box>
+        </Button>
       </Flex>
-      <Button
-        className="button highlight-button-cam box-shadow zoom-on-hover"
-        color="white"
-        onClick={() => handleClick()}
-        w={188}
-        size="lg"
-        onMouseEnter={() => setHover(true)}
-        onMouseLeave={() => setHover(false)}
-      >
-        <Box display="flex" alignItems="center" gap="2" whiteSpace="nowrap">
-          <PiSwordFill />
-          {hover ? "COPY IP" : "PLAY NOW"}
-        </Box>
-      </Button>
-    </Flex>
+    </Box>
   )
 }
 
