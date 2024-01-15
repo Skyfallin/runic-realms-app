@@ -335,7 +335,8 @@ body {
   .bottom-container {
     grid-template-columns: 1fr; /* 1 column in mobile */
     grid-template-rows:
-      repeat(8, minmax(200px, auto))
+      repeat(7, minmax(200px, auto))
+      minmax(100px, auto)
       minmax(100px, auto);
     gap: 20px;
   }
@@ -382,6 +383,7 @@ body {
     grid-row: 6;
     max-width: 80%;
     margin: auto;
+    text-align: center;
   }
 
   .store-icons-container {

@@ -1,4 +1,4 @@
-import { Box, Button, Text } from "@chakra-ui/react"
+import { Box, Button, Flex, Text } from "@chakra-ui/react"
 import React from "react"
 import { FaCoins } from "react-icons/fa"
 import { type CarouselText } from "~/types/carousel-text"
@@ -71,7 +71,7 @@ const ScrollContent = () => {
         >
           {imageTextContents[currentImage]?.title}
         </Text>
-        <Text fontSize="lg" className="scroll-content-text">
+        <Text fontSize="lg" className="scroll-content-text" textAlign="center">
           {imageTextContents[currentImage]?.text}
         </Text>
       </Box>
@@ -84,7 +84,7 @@ const ScrollContent = () => {
         >
           Take Up Arms
         </Text>
-        <Text fontSize="lg" className="scroll-content-text">
+        <Text fontSize="lg" className="scroll-content-text" textAlign="center">
           The Realm of Alterra features{" "}
           <span className="font-bold">six unique</span> and challenging
           <span className="font-bold"> dungeons</span>, presenting increasingly
@@ -139,7 +139,7 @@ const ScrollContent = () => {
           fellowship by forming a <span className="font-bold">Guild</span>!
         </Text>
       </Box>
-      <Box className="support-server-container">
+      <Flex className="support-server-container" gap={3}>
         <Text
           fontWeight="bold"
           fontFamily="'IM Fell English', serif"
@@ -165,7 +165,7 @@ const ScrollContent = () => {
             To the store!
           </Box>
         </Button>
-      </Box>
+      </Flex>
       <Box className="store-icons-container" mx="auto" my="auto">
         <StoreIcons />
       </Box>

@@ -33,13 +33,20 @@ const LogoContent = () => {
 
   return (
     <Flex
+      background="red"
       flexDirection="column"
       alignItems="center"
       justifyContent="center"
       h="100%"
+      w="75%"
       gap={4}
     >
-      <Flex flexDirection="column" justifyContent="center" alignItems="center">
+      <Flex
+        background="green"
+        flexDirection="column"
+        justifyContent="center"
+        alignItems="center"
+      >
         <Image
           src="/runic-realms-logo.svg"
           alt="Runic Realms Logo"
