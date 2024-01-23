@@ -48,7 +48,7 @@ const imageTextContents: Array<CarouselText> = [
 ]
 
 const handleStoreButtonClick = () => {
-  window.location.href = "https://runicrealms.buycraft.net/"
+  window.location.href = "https://store.runicrealms.com/"
 }
 
 const ScrollContent = () => {

@@ -19,7 +19,7 @@ const Navigation = () => {
       label: "Store",
       icon: <FaCoins />,
       type: "external",
-      url: "https://runicrealms.buycraft.net/",
+      url: "https://store.runicrealms.com/",
     },
     { label: "Map", icon: <FaMap />, type: "internal", url: "/map" },
     {

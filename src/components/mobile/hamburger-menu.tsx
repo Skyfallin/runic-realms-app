@@ -43,7 +43,7 @@ const HamburgerMenu = () => {
         <ChakraLink href="https://www.runicrealms.com/forums/news/">
           News
         </ChakraLink>
-        <ChakraLink href="https://runicrealms.buycraft.net/">Store</ChakraLink>
+        <ChakraLink href="https://store.runicrealms.com/">Store</ChakraLink>
         <ChakraLink href="/map">Map</ChakraLink>
         <ChakraLink href="https://www.runicrealms.com/forums/">
           Forums
