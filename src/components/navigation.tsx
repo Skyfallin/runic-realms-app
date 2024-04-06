@@ -1,7 +1,12 @@
 import { Box, Button, ButtonGroup } from "@chakra-ui/react"
 import { useRouter } from "next/router"
-import { FaBullhorn, FaCoins, FaHome, FaMap } from "react-icons/fa"
-import { MdForum } from "react-icons/md"
+import {
+  FaBullhorn,
+  FaCoins,
+  FaHome,
+  FaInfoCircle,
+  FaMap,
+} from "react-icons/fa"
 import { type ButtonPayload } from "~/types/button-payload"
 
 const Navigation = () => {
@@ -13,7 +18,7 @@ const Navigation = () => {
       label: "News",
       icon: <FaBullhorn />,
       type: "external",
-      url: "https://www.runicrealms.com/forums/news/",
+      url: "https://www.runicrealms.com/forums/news/", // TODO: latest contentful news post
     },
     {
       label: "Store",
@@ -23,10 +28,10 @@ const Navigation = () => {
     },
     { label: "Map", icon: <FaMap />, type: "internal", url: "/map" },
     {
-      label: "Forums",
-      icon: <MdForum />,
-      type: "external",
-      url: "https://www.runicrealms.com/forums/",
+      label: "About",
+      icon: <FaInfoCircle />,
+      type: "internal",
+      url: "/",
     },
   ]
 
